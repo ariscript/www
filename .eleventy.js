@@ -8,6 +8,7 @@ import nav from "@11ty/eleventy-navigation";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 import katex from "@vscode/markdown-it-katex";
+import minifier from "html-minifier";
 
 const OUT_DIR = "dist/";
 
@@ -15,6 +16,7 @@ export default function conf(config) {
     config.addPassthroughCopy({
         "./public": "/",
     });
+
     config.addWatchTarget("content/**/*.{svg,png,jpeg,webp}");
 
     // config.addPlugin(img, {
@@ -65,6 +67,18 @@ export default function conf(config) {
         lib.use(katex.default, {
             output: "mathml",
         });
+    });
+
+    config.addTransform("htmlmin", function (content) {
+        if (this.page.outputPath?.endsWith(".html")) {
+            return minifier.minify(content, {
+                useShortDoctype: true,
+                collapseWhitespace: true,
+                minifyCSS: true,
+            });
+        }
+
+        return content;
     });
 
     return {
