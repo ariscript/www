@@ -9,7 +9,6 @@ import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 import katex from "@vscode/markdown-it-katex";
 import prettier from "prettier";
-import prettierConfig from "./.prettierrc.json" assert { type: "json" };
 
 const OUT_DIR = "dist/";
 
@@ -50,7 +49,7 @@ export default function conf(config) {
     config.amendLibrary("md", (lib) => {
         lib.use(mdAnchor, {
             permalink: mdAnchor.permalink.ariaHidden({
-                placement: "after",
+                placement: "before",
                 class: "header-anchor",
                 symbol: "#",
                 ariaHidden: false,
@@ -72,7 +71,8 @@ export default function conf(config) {
         ) {
             return await prettier.format(content, {
                 filepath: this.page.outputPath,
-                ...prettierConfig,
+                tabWidth: 4,
+                proseWrap: "always",
             });
         }
 
@@ -80,7 +80,7 @@ export default function conf(config) {
     });
 
     return {
-        templateFormats: ["md", "njk", "html"],
+        templateFormats: ["md", "njk", "html", "11ty.js"],
         markdownTemplateEngine: "njk",
         htmlTemplateEngine: "njk",
         dir: {

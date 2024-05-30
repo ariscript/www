@@ -1,0 +1,17 @@
+article > dl {
+    margin-block-start: 0px;
+}
+
+article > dl > section {
+    border-bottom: 1px solid;
+    padding-top: 1rem;
+}
+
+article > dl > section:last-of-type {
+    border: none;
+}
+
+article > dl > section > dt {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
