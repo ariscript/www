@@ -2,6 +2,7 @@
     --text-color: #4c4f69;
     --bg-color: #eff1f5;
     --link-color: #7287fd;
+    --name-color: #8839ef;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -9,6 +10,7 @@
         --text-color: #cad3f5;
         --bg-color: #24273a;
         --link-color: #b7bdf8;
+        --name-color: #c6a0f6;
     }
 }
 
@@ -41,11 +43,23 @@ body > * {
     width: min(768px, 100%);
 }
 
+header,
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+header {
+    flex-direction: column;
+}
+
+header a.name {
+    font-size: 1.333rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--name-color);
 }
 
 nav > dl {
@@ -87,4 +101,8 @@ a:visited {
 
 .katex-html {
     display: none;
+}
+
+pre[class*="language-"] {
+    border-radius: 1rem;
 }

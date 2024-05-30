@@ -25,15 +25,12 @@
             title="{{ metadata.title }}"
         />
 
-        {%- css %}
-            {% include "public/css/default.css" %}
-            {% include "public/css/prism-theme.css" %}
-        {% endcss %}
-        <style>
-            {% getBundle "css" %}
-        </style>
+        <link rel="stylesheet" href="/css/prism-theme.css" />
+        <link rel="stylesheet" href="/css/default.css" />
 
-        {{ head | safe }}
+        {{
+            head | safe
+        }}
     </head>
     <body>
         {{ content | safe }}
