@@ -1,0 +1,28 @@
+# LLM Training scrapers consume large amounts of data and then don't credit
+# the true authors of the information in the model's output.
+# I don't permit usage of my content for any purpose involved with training of
+# Machine Learning/Large Language Models.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /

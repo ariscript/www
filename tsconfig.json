@@ -1,0 +1,13 @@
+{
+    "extends": "@tsconfig/strictest/tsconfig.json",
+    "compilerOptions": {
+        "lib": ["DOM", "ESNext"],
+        "target": "ESNext",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true
+    }
+}

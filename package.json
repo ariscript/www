@@ -1,0 +1,35 @@
+{
+    "name": "www",
+    "version": "0.0.0",
+    "private": true,
+    "description": "My personal website",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "build": "npx @11ty/eleventy",
+        "dev": "npx @11ty/eleventy --serve",
+        "clean": "rm -rf dist/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/starmut/www.git"
+    },
+    "author": "Ari Prakash",
+    "license": "AGPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/starmut/www/issues"
+    },
+    "homepage": "https://github.com/starmut/www#readme",
+    "devDependencies": {
+        "@11ty/eleventy": ">=3.0.0-alpha",
+        "@11ty/eleventy-navigation": "^0.3.5",
+        "@11ty/eleventy-plugin-bundle": "^2.0.2",
+        "@11ty/eleventy-plugin-rss": "^1.2.0",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+        "@tsconfig/strictest": "^2.0.5",
+        "@vscode/markdown-it-katex": "^1.0.3",
+        "markdown-it-anchor": "^9.0.1",
+        "prettier": "^3.2.5",
+        "typescript": "^5.4.5"
+    }
+}

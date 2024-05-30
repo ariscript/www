@@ -1,0 +1,21 @@
+---
+layout: layout/base.njk
+title: Home
+---
+
+<h1>{{ config.author.name }}</h1>
+
+<article>
+    <p class="big">👋🏽 Welcome!</p>
+    <p>
+        Sometimes I make things, and sometimes I write about those (or other)
+        things. I'm interested in a lot of things, computer science, math,
+        gender, etc.
+    </p>
+    <p>
+        I'll hopefully post things often, last change was made on
+        {% buildDate %}.
+    </p>
+</article>
+
+{% include "partials/footer.njk" %}

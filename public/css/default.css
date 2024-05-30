@@ -1,0 +1,89 @@
+:root {
+    --text-color: #4c4f69;
+    --bg-color: #eff1f5;
+    --link-color: #7287fd;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #cad3f5;
+        --bg-color: #24273a;
+        --link-color: #b7bdf8;
+    }
+}
+
+:root {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.25em;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100%;
+    margin: 0px;
+    padding: 1rem;
+}
+
+body > * {
+    margin-inline: auto;
+    width: min(768px, 100%);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > dl {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: self-end;
+    gap: 0.5rem 1rem;
+    width: max-content;
+}
+
+nav > dl > dt,
+nav > dl > dd {
+    padding-inline: 0.5rem;
+    width: min-content;
+}
+
+nav > dl > dt {
+    font-weight: bold;
+}
+
+nav > dl > dd {
+    margin: 0;
+}
+
+nav > dl > dd > ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: max-content;
+    gap: 2rem;
+}
+
+a,
+a:visited {
+    color: var(--link-color);
+}
+
+.katex-html {
+    display: none;
+}
