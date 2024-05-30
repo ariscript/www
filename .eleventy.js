@@ -8,7 +8,8 @@ import nav from "@11ty/eleventy-navigation";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 import katex from "@vscode/markdown-it-katex";
-import minifier from "html-minifier";
+import prettier from "prettier";
+import prettierConfig from "./.prettierrc.json" assert { type: "json" };
 
 const OUT_DIR = "dist/";
 
@@ -18,12 +19,6 @@ export default function conf(config) {
     });
 
     config.addWatchTarget("content/**/*.{svg,png,jpeg,webp}");
-
-    // config.addPlugin(img, {
-    //     extensions: "html",
-    //     urlPath: "/img/",
-    //     outputDir: `./${OUT_DIR}/img/`,
-    // });
 
     config.addPlugin(rss);
     config.addPlugin(highlight, { preAttributes: { tabIndex: 0 } });
@@ -69,12 +64,15 @@ export default function conf(config) {
         });
     });
 
-    config.addTransform("htmlmin", function (content) {
-        if (this.page.outputPath?.endsWith(".html")) {
-            return minifier.minify(content, {
-                useShortDoctype: true,
-                collapseWhitespace: true,
-                minifyCSS: true,
+    config.addTransform("prettier", async function (content) {
+        if (
+            [".html", ".css", ".js"].some((x) =>
+                this.page.outputPath.endsWith(x),
+            )
+        ) {
+            return await prettier.format(content, {
+                filepath: this.page.outputPath,
+                ...prettierConfig,
             });
         }
 
