@@ -77,6 +77,7 @@ nav > dl > dd > ul {
     justify-content: flex-end;
     width: max-content;
     gap: 2rem;
+    list-style-type: none;
 }
 
 a,
