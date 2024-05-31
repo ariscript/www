@@ -64,7 +64,7 @@ h4 {
 }
 
 table {
-    width: 80%;
+    min-width: 80%;
     margin: 0.5rem auto;
 }
 
