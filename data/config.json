@@ -1,7 +1,9 @@
 {
     "author": {
         "name": "Ari Prakash",
-        "github": "https://github.com/starmut",
-        "fedi": "https://transfem.social/@ari"
+        "socials": {
+            "GitHub": "https://github.com/starmut",
+            "Fediverse": "https://transfem.social/@ari"
+        }
     }
 }

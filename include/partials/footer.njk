@@ -9,11 +9,12 @@
                     <li><a href="/about">About</a></li>
                 </ul>
             </dd>
-            <dt>External</dt>
+            <dt>Socials</dt>
             <dd>
                 <ul>
-                    <li><a href="{{ config.author.github }}">GitHub</a></li>
-                    <li><a href="{{ config.author.fedi }}">Fediverse</a></li>
+                    {% for platform, profile in config.author.socials %}
+                        <li><a href="{{ profile }}">{{ platform }}</a></li>
+                    {% endfor %}
                 </ul>
             </dd>
             <dt>Other</dt>
