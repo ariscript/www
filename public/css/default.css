@@ -62,7 +62,7 @@ header a.name {
     color: var(--name-color);
 }
 
-nav > dl {
+dl.table {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: self-end;
@@ -70,21 +70,21 @@ nav > dl {
     width: max-content;
 }
 
-nav > dl > dt,
-nav > dl > dd {
+dl.table > dt,
+dl.table > dd {
     padding-inline: 0.5rem;
     width: min-content;
 }
 
-nav > dl > dt {
+dl.table > dt {
     font-weight: bold;
 }
 
-nav > dl > dd {
+dl.table > dd {
     margin: 0;
 }
 
-nav > dl > dd > ul {
+dl.table > dd > ul {
     padding: 0;
     display: flex;
     flex-direction: row;

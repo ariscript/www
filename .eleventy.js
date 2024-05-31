@@ -12,6 +12,10 @@ import prettier from "prettier";
 
 const OUT_DIR = "dist/";
 
+function readableDate(date) {
+    return new Date(date).toISOString().split("T")[0];
+}
+
 export default function conf(config) {
     config.addPassthroughCopy({
         "./public": "/",
@@ -41,17 +45,15 @@ export default function conf(config) {
         Array.from(new Set(items.data.flatMap((i) => i.data.tags ?? []))),
     );
 
-    config.addShortcode(
-        "buildDate",
-        () => new Date().toISOString().split("T")[0],
-    );
+    config.addFilter("readableDate", readableDate);
+    config.addShortcode("buildDate", () => readableDate(new Date()));
 
     config.amendLibrary("md", (lib) => {
         lib.use(mdAnchor, {
             permalink: mdAnchor.permalink.ariaHidden({
-                placement: "before",
+                placement: "after",
                 class: "header-anchor",
-                symbol: "#",
+                symbol: "🔗",
                 ariaHidden: false,
             }),
             level: [1, 2, 3, 4],

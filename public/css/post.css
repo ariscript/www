@@ -1,0 +1,85 @@
+:root {
+    --thead-color: #ccd0da; /* catppuccin surface 0 */
+    --tr-odd-color: #e6e9ef; /* catppuccin mantle */
+    --tr-even-color: #dce0e8; /* catppuccin crust */
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    :root {
+        --thead-color: #363a4f;
+        --tr-odd-color: #1e2030;
+        --tr-even-color: #181926;
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article > dl.table {
+    min-width: 50%;
+}
+
+article > dl.table > dd {
+    justify-self: end;
+}
+
+:is(h1, h2, h3, h4, h5, h6):not(:hover) > a.header-anchor {
+    display: none;
+}
+
+a.header-anchor {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 1rem 0px;
+}
+
+h5,
+h6 {
+    margin: 0.75rem 0px;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.333rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+table {
+    width: 80%;
+    margin: 0.5rem auto;
+}
+
+thead {
+    background-color: var(--thead-color);
+}
+
+table :is(th, td) {
+    padding: 0.25rem 0.5rem;
+}
+
+tbody > tr {
+    background-color: var(--tr-odd-color);
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: var(--tr-even-color);
+}

@@ -1,9 +1,19 @@
 ---
 layout: layout/base.njk
+head: |
+    <link rel="stylesheet" href="/css/post.css" />
 ---
 
 <main>
     <article>
-        {{ content | safe }}
+        <dl class="table">
+            <dt>Date</dt>
+            <dd>{{ date | readableDate }}</dd>
+            <dt>Tags</dt>
+            <dd>test</dd>
+        </dl>
+        <section>
+            {{ content | safe }}
+        </section>
     </article>
 </main>
