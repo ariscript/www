@@ -1,69 +1,24 @@
-import mdAnchor from "markdown-it-anchor";
-
-import highlight from "@11ty/eleventy-plugin-syntaxhighlight";
-import rss from "@11ty/eleventy-plugin-rss";
-import bundle from "@11ty/eleventy-plugin-bundle";
-import nav from "@11ty/eleventy-navigation";
-
-import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
-
-import katex from "@vscode/markdown-it-katex";
 import prettier from "prettier";
+
+import plugins from "./config/plugins.js";
+import filters, { readableDate } from "./config/filters.js";
+import markdown from "./config/markdown.js";
 
 const OUT_DIR = "dist/";
 
-function readableDate(date) {
-    return new Date(date).toISOString().split("T")[0];
-}
-
 export default function conf(config) {
+    const md = markdown();
+
     config.addPassthroughCopy({
         "./public": "/",
     });
-
     config.addWatchTarget("content/**/*.{svg,png,jpeg,webp}");
 
-    config.addPlugin(rss);
-    config.addPlugin(highlight, { preAttributes: { tabIndex: 0 } });
-    config.addPlugin(nav);
-    config.addPlugin(EleventyHtmlBasePlugin);
-    config.addPlugin(bundle);
+    plugins(config);
+    filters(config);
+    config.setLibrary("md", md);
 
-    config.addFilter("head", (array, n) => {
-        if (!Array.isArray(array)) {
-            return [];
-        }
-
-        if (n < 0) {
-            return array.slice(n);
-        }
-
-        return array.slice(0, n);
-    });
-
-    config.addFilter("tags", (items) =>
-        Array.from(new Set(items.data.flatMap((i) => i.data.tags ?? []))),
-    );
-
-    config.addFilter("readableDate", readableDate);
     config.addShortcode("buildDate", () => readableDate(new Date()));
-
-    config.amendLibrary("md", (lib) => {
-        lib.use(mdAnchor, {
-            permalink: mdAnchor.permalink.ariaHidden({
-                placement: "after",
-                class: "header-anchor",
-                symbol: "🔗",
-                ariaHidden: false,
-            }),
-            level: [1, 2, 3, 4],
-            slugify: config.getFilter("slugify"),
-        });
-
-        lib.use(katex.default, {
-            output: "mathml",
-        });
-    });
 
     config.addTransform("prettier", async function (content) {
         if (

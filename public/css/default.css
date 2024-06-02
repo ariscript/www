@@ -70,8 +70,7 @@ dl.table {
     width: max-content;
 }
 
-dl.table > dt,
-dl.table > dd {
+dl.table > :is(dt, dd) {
     padding-inline: 0.5rem;
     width: min-content;
 }

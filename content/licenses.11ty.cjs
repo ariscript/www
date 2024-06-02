@@ -1,9 +1,6 @@
 const { promisify } = require("node:util");
 const { readFile } = require("node:fs/promises");
 const licenseChecker = promisify(require("license-checker").init);
-const MarkdownIt = require("markdown-it");
-
-const md = new MarkdownIt().disable("code");
 
 const PACKAGE_NAME = `${process.env["npm_package_name"]}@${process.env["npm_package_version"]}`;
 
@@ -16,7 +13,7 @@ class Licenses {
         };
     }
 
-    async render({}) {
+    async render({ config }) {
         const packageData = await Promise.all(
             Object.entries(
                 await licenseChecker({
@@ -43,13 +40,24 @@ class Licenses {
             <article>
                 <h1>OSS Licenses</h1>
 
+                <p>
+                    The <em>code</em> powering this website is
+                    <a href="${config.repoUrl}">open source</a>
+                    and licensed under
+                    <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL 3.0 or later</a>.
+                    <br />
+                    The <em>blog posts</em> on this website are licensed under
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>
+                    unless otherwise mentioned on the page.
+                </p>
+
                 <p>These are the open source libraries that were used to make this website:</p>
 
                 <dl>
                     <section>
                         <dt>prism-themes@1.9.0</dt>
                         <dd>
-                            ${md.render(`
+                            ${this.renderMd(`
                             The MIT License (MIT)
 
                             Copyright (c) 2015 PrismJS
@@ -81,7 +89,7 @@ class Licenses {
                         <dt>${packageName}</dt>
 
                         <dd>
-                            ${md.render(license ?? "")}
+                            ${this.renderMd(license ?? "")}
                         </dd>
                     </section>
                 `,

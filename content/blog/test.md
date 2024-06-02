@@ -63,7 +63,11 @@ fn main() -> Result<(), Box<dyn Error>> {
 }
 ```
 
-Here's some inline math $1 + 1 = 2 = e^{\ln 2}$.
+Here's some inline math[^1] \(1 + 1 = 2 = e^{\ln 2}\)
+
+[^1]: Math uses KaTeX.
+
+    Second paragraph of footnote.
 
 This is a math block:
 
@@ -78,5 +82,5 @@ $$
 | another | row    |
 
 > This is a block quote
-
-\- Sun Tzu, The Art of War
+>
+> -   Sun Tzu, The Art of War

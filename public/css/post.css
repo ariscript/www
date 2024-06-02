@@ -30,8 +30,12 @@ article > dl.table > dd {
     display: none;
 }
 
-a.header-anchor {
+article a {
     text-decoration: none;
+}
+
+article a:not(:is(.header-anchor, .footnote-ref > a, .footnote-backref)):hover {
+    text-decoration: underline;
 }
 
 h1,
