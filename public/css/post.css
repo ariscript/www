@@ -2,6 +2,7 @@
     --thead-color: #ccd0da; /* catppuccin surface 0 */
     --tr-odd-color: #e6e9ef; /* catppuccin mantle */
     --tr-even-color: #dce0e8; /* catppuccin crust */
+    --blockquote-left-color: #5c5f77; /* catppuccin subtext 1 */
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -9,6 +10,7 @@
         --thead-color: #363a4f;
         --tr-odd-color: #1e2030;
         --tr-even-color: #181926;
+        --blockquote-left-color: #b8c0e0;
     }
 }
 
@@ -86,4 +88,14 @@ tbody > tr {
 
 tbody > tr:nth-of-type(even) {
     background-color: var(--tr-even-color);
+}
+
+figure.c-blockquote > blockquote {
+    margin-inline-start: 0;
+    padding-inline-start: 1rem;
+    border-inline-start: 5px solid var(--blockquote-left-color);
+}
+
+figure.c-blockquote > figcaption::before {
+    content: "—";
 }

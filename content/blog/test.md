@@ -81,6 +81,12 @@ $$
 | look    | theres |
 | another | row    |
 
-> This is a block quote
+Paragraph before blockquote.
+
+> This is a block quote.
 >
-> -   Sun Tzu, The Art of War
+> Look it's actually big.
+>
+> -- Sun Tzu, The Art of War
+
+Just for clarity, here's a normal paragraph after.

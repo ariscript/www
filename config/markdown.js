@@ -22,7 +22,10 @@ const md = new MarkdownIt({
     .use(katex.default, {
         output: "mathml",
     })
-    .use(attribution)
+    .use(attribution, {
+        marker: "--",
+        removeMarker: true,
+    })
     .use(footnote)
     .use(figure, { figcaption: "alt" });
 
