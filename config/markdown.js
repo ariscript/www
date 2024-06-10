@@ -27,7 +27,12 @@ const md = new MarkdownIt({
         removeMarker: true,
     })
     .use(footnote)
-    .use(figure, { figcaption: "alt" });
+    .use(figure, {
+        lazy: true,
+        async: true,
+        dataType: true,
+        figcaption: "alt",
+    });
 
 export default function markdown() {
     return md;

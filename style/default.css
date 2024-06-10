@@ -1,8 +1,9 @@
 :root {
-    --text-color: #4c4f69;
-    --bg-color: #eff1f5;
-    --link-color: #7287fd;
-    --name-color: #8839ef;
+    --text-color: #4c4f69; /* catppuccin text */
+    --bg-color: #eff1f5; /* catppuccin base */
+    --link-color: #7287fd; /* catpuccin lavender */
+    --name-color: #8839ef; /* catppuccin mauve */
+    --caption-color: #5c5f77; /* catppuccin subtext 1 */
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -11,6 +12,7 @@
         --bg-color: #24273a;
         --link-color: #b7bdf8;
         --name-color: #c6a0f6;
+        --caption-color: #b8c0e0;
     }
 }
 
@@ -105,4 +107,8 @@ a:visited {
 
 pre[class*="language-"] {
     border-radius: 1rem;
+}
+
+figure[data-type="image"] > figcaption {
+    color: var(--caption-color);
 }

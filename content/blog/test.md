@@ -49,6 +49,8 @@ Here's some _italics_ and `inline code`.
 
 This is [a link](https://github.com/starmut/www).
 
+![Example photo, purely for testing](https://picsum.photos/300)
+
 ```txt
 This is a plain code block.
 ```
