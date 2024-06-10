@@ -25,14 +25,14 @@
             type="application/json"
             title="{{ metadata.title }}"
         />
+        
+        {% getBundle "html", "head" %}
 
         {%- css %}{% include "style/default.css" %}{% endcss %}
 
-        <style>{% getBundle "css" %}</style>
-
-        {{
-            head | safe
-        }}
+        <style>
+            {% getBundle "css" %}
+        </style>
     </head>
     <body>
         {{ content | safe }}
