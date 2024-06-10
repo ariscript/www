@@ -9,7 +9,6 @@ class Licenses {
         return {
             title: "OSS Licenses",
             layout: "layout/base.njk",
-            head: '<link rel="stylesheet" href="/css/licenses.css" />',
         };
     }
 
@@ -35,6 +34,8 @@ class Licenses {
                     ).replaceAll(/<(.*)>/g, "&lt;$1&gt;"),
                 ]),
         );
+
+        this.css(await readFile("style/licenses.css", "utf-8"));
 
         return `
             <article>

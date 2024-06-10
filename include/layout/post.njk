@@ -1,8 +1,11 @@
 ---
 layout: layout/base.njk
-head: |
-    <link rel="stylesheet" href="/css/post.css" />
 ---
+
+{%- css %}
+    {% include "style/post.css" %}
+    {% include "style/prism-theme.css" %}
+{% endcss %}
 
 <main>
     <article>

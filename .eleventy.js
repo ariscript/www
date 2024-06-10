@@ -13,6 +13,7 @@ export default function conf(config) {
         "./public": "/",
     });
     config.addWatchTarget("content/**/*.{svg,png,jpeg,webp}");
+    config.addWatchTarget("style/**/*.css");
 
     plugins(config);
     filters(config);

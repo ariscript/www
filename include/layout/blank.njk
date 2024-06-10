@@ -26,8 +26,9 @@
             title="{{ metadata.title }}"
         />
 
-        <link rel="stylesheet" href="/css/prism-theme.css" />
-        <link rel="stylesheet" href="/css/default.css" />
+        {%- css %}{% include "style/default.css" %}{% endcss %}
+
+        <style>{% getBundle "css" %}</style>
 
         {{
             head | safe
