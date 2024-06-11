@@ -16,9 +16,12 @@
     }
 }
 
+/* if you're printing this website, we need to talk */
 @media only print {
     :root {
-        --bg-color: white; /* if you're printing this website, we need to talk */
+        --text-color: black;
+        --bg-color: white;
+        --link-color: blue;
     }
 }
 
