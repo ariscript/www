@@ -9,6 +9,11 @@ export default function filters(config) {
         Array.from(new Set(items.data.flatMap((i) => i.data.tags ?? []))),
     );
 
+    config.addFilter("filterTags", (tags) =>
+        // filter out tags that are for internal organization
+        (tags ?? []).filter((t) => !["posts"].includes(t)),
+    );
+
     config.addFilter("readableDate", readableDate);
 
     config.addFilter("renderMd", (src) => markdown().render(src));

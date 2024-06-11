@@ -1,8 +1,10 @@
 ---
-layout: layout/post.njk
 title: Test Article
 description: Testing description
-date: 2024-05-30
+date: 2024-06-09
+tags:
+    - test
+    - fake
 ---
 
 # This is a h1

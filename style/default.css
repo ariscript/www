@@ -16,6 +16,12 @@
     }
 }
 
+@media only print {
+    :root {
+        --bg-color: white; /* if you're printing this website, we need to talk */
+    }
+}
+
 :root {
     font-family: Helvetica, sans-serif;
     font-size: 18px;

@@ -1,0 +1,42 @@
+:root {
+    --post-border-color: #5c5f77; /* catppuccin subtext 1 */
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    :root {
+        --post-border-color: #b8c0e0;
+    }
+}
+
+.posts-list {
+    padding-inline-start: 0;
+}
+
+.posts-list > li {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding-inline-start: 1rem;
+    border-inline-start: 0.25rem solid var(--post-border-color);
+}
+
+.posts-list > li > .post-data,
+.post-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.post-tags {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+.tag-link::before {
+    content: "#";
+}
+
+.post-link {
+    font-size: 1.25rem;
+    font-weight: bold;
+}

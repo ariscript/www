@@ -1,0 +1,27 @@
+{%- css %}
+    {% include "style/posts.css" %}
+{% endcss %}
+
+<ol class="posts-list">
+    {% for post in posts | reverse %}
+        <li>
+            <a href="{{ post.url }}" class="post-link">
+                {{ post.data.title }}
+            </a>
+            <div class="post-data">
+                {% set date = post.data.date | readableDate %}
+                <p>{{ post.data.description }}</p>
+                <p>
+                    <time datetime="{{ date }}">{{ date }}</time>
+                </p>
+            </div>
+            <ul class="post-tags">
+                {% for tag in post.data.tags | filterTags %}
+                    <li>
+                        <a href="/tags/{{ tag }}" class="tag-link">{{ tag }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ol>

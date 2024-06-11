@@ -13,7 +13,15 @@ layout: layout/base.njk
             <dt>Date</dt>
             <dd>{{ date | readableDate }}</dd>
             <dt>Tags</dt>
-            <dd>test</dd>
+            <dd>
+                <ul>
+                    {% for tag in tags | filterTags %}
+                        <li>
+                            <a href="/tags/{{ tag }}">{{ tag }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </dd>
         </dl>
         <section>
             {{ content | safe }}

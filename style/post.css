@@ -32,7 +32,7 @@ article > dl.table > dd {
     display: none;
 }
 
-article a {
+article > :not(dl.table) a {
     text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ tbody > tr:nth-of-type(even) {
 figure.c-blockquote > blockquote {
     margin-inline-start: 0;
     padding-inline-start: 1rem;
-    border-inline-start: 5px solid var(--blockquote-left-color);
+    border-inline-start: 0.25rem solid var(--blockquote-left-color);
 }
 
 figure.c-blockquote > figcaption::before {
