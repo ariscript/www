@@ -1,0 +1,21 @@
+---
+layout: layout/base.njk
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+    filter:
+        - all
+        - posts
+    addAllPagesToCollections: true
+eleventyComputed:
+    title: Tagged {{ tag }}
+    description: My Blog posts with tag "{{ tag }}"
+permalink: /tags/{{ tag | slugify }}/
+---
+
+<h1>Tag: {{ tag }}</h1>
+
+{% set posts = collections[tag] %}
+
+{% include "partials/posts.njk" %}

@@ -5,7 +5,6 @@ description: See title
 date: 2024-06-10
 tags:
     - test
-    - fake
 ---
 
 # Why are you here
