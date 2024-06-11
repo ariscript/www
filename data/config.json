@@ -6,5 +6,6 @@
             "Fediverse": "https://transfem.social/@ari"
         }
     },
-    "repoUrl": "https://github.com/ariscript/www"
+    "repoUrl": "https://github.com/ariscript/www",
+    "cssNakedDay": true
 }
