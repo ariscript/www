@@ -67,7 +67,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 }
 ```
 
-Here's some inline math[^1] \(1 + 1 = 2 = e^{\ln 2}\)
+Here's some inline math[^1] $1 + 1 = 2 = e^{\ln 2}$
 
 [^1]: Math uses KaTeX.
 
