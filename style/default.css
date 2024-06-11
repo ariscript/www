@@ -51,6 +51,10 @@ body > * {
     width: min(768px, 100%);
 }
 
+#css-naked-day {
+    display: none;
+}
+
 header,
 footer {
     display: flex;

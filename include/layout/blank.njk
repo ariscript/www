@@ -33,8 +33,17 @@
         <style>
             {% getBundle "css" %}
         </style>
+
+        <script type="module" src="/js/cssNakedDay.js"></script>
     </head>
     <body>
+        <section id="css-naked-day">
+            Today is April 9 (somewhere on earth), which is
+            <a href="http://css-naked-day.github.io">CSS Naked Day</a>,
+            a day where we celebrate our raw structured, semantic HTML
+            for accessibility.
+        </section>
+
         {{ content | safe }}
     </body>
 </html>
