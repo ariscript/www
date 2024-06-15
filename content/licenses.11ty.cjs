@@ -47,9 +47,11 @@ class Licenses {
                     and licensed under
                     <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL 3.0 or later</a>.
                     <br />
-                    The <em>blog posts</em> on this website are licensed under
+                    The <em>content</em> on this website are licensed under
                     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>
                     unless otherwise mentioned on the page.
+                    <br />
+                    Refer to the repository README for a definition of what constitutes content.
                 </p>
 
                 <p>These are the open source libraries that were used to make this website:</p>
