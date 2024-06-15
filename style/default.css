@@ -109,9 +109,18 @@ dl.table > dd > ul {
     list-style-type: none;
 }
 
+:is(h1, h2, h3, h4, h5, h6):not(:hover) > a.header-anchor {
+    display: none;
+}
+
 a,
 a:visited {
     color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .katex-html {
