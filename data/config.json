@@ -7,5 +7,6 @@
         }
     },
     "repoUrl": "https://github.com/ariscript/www",
-    "cssNakedDay": true
+    "cssNakedDay": true,
+    "hostname": "aridev.pages.dev"
 }

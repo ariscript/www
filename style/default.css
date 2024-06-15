@@ -123,6 +123,18 @@ a:hover {
     text-decoration: underline;
 }
 
+a[style]::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.2rem;
+    border-radius: 3px;
+    background-size: contain;
+    background-image: var(--url);
+}
+
 .katex-html {
     display: none;
 }

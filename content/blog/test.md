@@ -49,7 +49,7 @@ Here is some **bold text**.
 
 Here's some _italics_ and `inline code`.
 
-This is [a link](https://github.com/starmut/www).
+This is [a link](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
 
 ![Example photo, purely for testing](https://picsum.photos/300)
 
