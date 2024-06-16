@@ -19,10 +19,12 @@ needs advance approval from myself.
 
 Content includes any files in the `content/` or `data/` directories, except:
 
+-   the `content/feed/` directory
 -   `content/blog.njk`
 -   `content/tags.njk`
 -   `content/licenses.11ty.cjs`
--   the _values_ of `data/config.json`
+-   the keys of `data/config.json`
+-   the keys of `data/feed.json`
 
 This list may (and likely will) change to include some new files if necessary.
 
