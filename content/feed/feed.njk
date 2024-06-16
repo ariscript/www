@@ -1,0 +1,30 @@
+---
+permalink: /feed/feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ feed.language }}">
+    <title>{{ feed.title }}</title>
+    <subtitle>{{ feed.description }}</subtitle>
+    <link rel="self" href="{{ permalink | htmlBaseUrl(feed.url) }}" />
+    <link href="{{ feed.url | addPathPrefixToFullUrl }}" />
+    <updated>{{
+        collections.posts | getNewestCollectionItemDate | dateToRfc3339
+    }}</updated>
+    <author>
+        <name>{{ config.author.name }}</name>
+    </author>
+    {% for post in collections.posts | reverse %}
+        {% set absolutePostUrl %}
+            {{ post.url | htmlBaseUrl(feed.url) }}
+        {% endset %}
+        <entry>
+            <title>{{ post.data.title }}</title>
+            <link href="{{ absolutePostUrl }}" />
+            <updated>{{ post.date | dateToRfc3339 }}</updated>
+            <id>{{ absolutePostUrl }}</id>
+            <content type="html">
+                {{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) }}
+            </content>
+        </entry>
+    {% endfor %}
+</feed>
