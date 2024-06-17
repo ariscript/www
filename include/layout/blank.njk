@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="darkreader-lock" />
 
-        <title>{{ title or metadata.title }} | {{ config.author.name }}</title>
+        <title>{{ title }} | {{ config.author.name }}</title>
         <meta
             name="description"
             content="{{ description or metadata.description }}"
@@ -17,13 +17,13 @@
             rel="alternate"
             href="/feed/feed.xml"
             type="application/atom+xml"
-            title="{{ metadata.title }}"
+            title="{{ feed.title }}"
         />
         <link
             rel="alternate"
             href="/feed/feed.json"
             type="application/json"
-            title="{{ metadata.title }}"
+            title="{{ feed.title }}"
         />
         
         {% getBundle "html", "head" %}
