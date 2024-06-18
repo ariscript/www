@@ -87,7 +87,6 @@ dl.table {
 
 dl.table > :is(dt, dd) {
     padding-inline: 0.5rem;
-    width: min-content;
 }
 
 dl.table > dt {
