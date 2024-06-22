@@ -46,7 +46,7 @@ const md = new MarkdownIt({
 
             tokens[idx].attrPush([
                 "style",
-                `--url: url("https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(
+                `--indieweb: url("https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(
                     `${url.protocol}//${url.hostname}`,
                 )}"); ${tokens[idx].attrGet("style") ?? ""}`,
             ]);
