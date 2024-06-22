@@ -1,2 +1,6 @@
+# I use Obsidian to write blog posts
+.obsidian/
+
+# Test files
 test.md
 another.md
