@@ -4,6 +4,7 @@
     --link-color: #7287fd; /* catpuccin lavender */
     --name-color: #8839ef; /* catppuccin mauve */
     --caption-color: #5c5f77; /* catppuccin subtext 1 */
+    --text-font: Helvetica, sans-serif;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -26,7 +27,7 @@
 }
 
 :root {
-    font-family: Helvetica, sans-serif;
+    font-family: var(--text-font);
     font-size: 18px;
     line-height: 1.25em;
 }
