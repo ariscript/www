@@ -13,7 +13,13 @@
             <dd>
                 <ul>
                     {% for platform, profile in config.author.socials %}
-                        <li><a href="{{ profile }}">{{ platform }}</a></li>
+                        <li>
+                            <a {% if platform == "Fediverse" %}rel="me"{% endif %}
+                               href="{{ profile }}"
+                            >
+                                {{ platform }}
+                            </a>
+                        </li>
                     {% endfor %}
                 </ul>
             </dd>
