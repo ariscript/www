@@ -1,6 +1,7 @@
 # My website
 
-This is the source code of my website, including the content on it.
+This is the source code of my website, including the content on it. You can
+visit it [here](https://ariscript.org/).
 
 Uses 11ty for site generation.
 
