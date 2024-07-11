@@ -9,6 +9,7 @@
     --tr-even-color: #dce0e8; /* catppuccin crust */
     --blockquote-left-color: #5c5f77; /* catppuccin subtext 1 */
     --code-font: JetBrainsMono, Menlo, Consolas, Courier, monospace;
+    --code-bg-mix: white;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -17,6 +18,7 @@
         --tr-odd-color: #1e2030;
         --tr-even-color: #181926;
         --blockquote-left-color: #b8c0e0;
+        --code-bg-mix: black;
     }
 }
 
@@ -98,6 +100,17 @@ figure.c-blockquote > figcaption::before {
     content: "—";
 }
 
-:is(pre, code)[class*="language-"] {
+pre[class*="language-"] code,
+code {
     font-family: var(--code-font);
+}
+
+code {
+    padding: 0.125rem;
+    background-color: color-mix(
+        in oklab,
+        var(--text-color),
+        var(--code-bg-mix) 80%
+    );
+    border-radius: 5px;
 }
