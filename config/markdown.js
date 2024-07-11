@@ -51,7 +51,7 @@ const md = new MarkdownIt({
                 )}"); ${tokens[idx].attrGet("style") ?? ""}`,
             ]);
         } catch {
-            // do nothing if href is not a valud URL
+            // do nothing if href is not a valid URL
         }
     });
 
