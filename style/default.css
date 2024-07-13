@@ -131,6 +131,12 @@ a[style*="--indieweb:"]::after {
     background-image: var(--indieweb);
 }
 
+@media only screen and (prefers-color-scheme: dark) {
+    a[style*="--indieweb:"]::after {
+        background-image: var(--indieweb-dark-override, var(--indieweb));
+    }
+}
+
 .katex-html {
     display: none;
 }
