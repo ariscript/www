@@ -22,6 +22,12 @@
     }
 }
 
+@media only print {
+    :root {
+        --code-bg-mix: white;
+    }
+}
+
 article {
     display: flex;
     flex-direction: column;
@@ -36,7 +42,7 @@ article > dl.table > dd {
     justify-self: end;
 }
 
-a.header-anchor:hover {
+a.header-anchor {
     text-decoration: none;
 }
 
@@ -110,7 +116,7 @@ code {
     background-color: color-mix(
         in oklab,
         var(--text-color),
-        var(--code-bg-mix) 80%
+        var(--code-bg-mix) 85%
     );
     border-radius: 5px;
 }

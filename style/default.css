@@ -1,7 +1,7 @@
 :root {
     --text-color: #4c4f69; /* catppuccin text */
     --bg-color: #eff1f5; /* catppuccin base */
-    --link-color: #7287fd; /* catpuccin lavender */
+    --link-color: #1e66f5; /* catpuccin lavender */
     --name-color: #8839ef; /* catppuccin mauve */
     --caption-color: #5c5f77; /* catppuccin subtext 1 */
     --text-font: Helvetica, sans-serif;
@@ -11,7 +11,7 @@
     :root {
         --text-color: #cad3f5;
         --bg-color: #24273a;
-        --link-color: #b7bdf8;
+        --link-color: #8aadf4;
         --name-color: #c6a0f6;
         --caption-color: #b8c0e0;
     }
@@ -116,10 +116,6 @@ dl.table > dd > ul {
 a,
 a:visited {
     color: var(--link-color);
-    text-decoration: none;
-}
-
-a:hover {
     text-decoration: underline;
 }
 
