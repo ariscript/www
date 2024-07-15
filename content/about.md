@@ -4,6 +4,16 @@ description: Excuse me while I brag about myself
 layout: layout/base.njk
 ---
 
+{%- html "head" %}
+
+<meta name="og:type" content="profile" />
+<meta name="profile:first_name" content="Ari" />
+<meta name="profile:last_name" content="Prakash" />
+<meta name="profile:username" content="ariscript" />
+<meta name="profile:gender" content="female" />
+
+{% endhtml %}
+
 {# not using the usual "#" prefix to prevent the anchor from appearing #}
 
 <h1>About</h1>

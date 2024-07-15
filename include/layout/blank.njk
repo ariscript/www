@@ -13,6 +13,18 @@
         />
         <meta name="generator" content="{{ eleventy.generator }}" />
 
+        <meta name="og:title" content="{{ title }}" />
+        <meta 
+            name="og:description"
+            content="{{ description or metadata.description }}"
+        />
+        <meta
+            name="og:url"
+            content="https://{{ config.hostname }}{{ page.url }}"
+        />
+        <meta name="og:locale" content="en_US" />
+        <meta name="og:site_name" content="{{ config.author.name }}" />
+
         <link
             rel="alternate"
             href="/feed/feed.xml"

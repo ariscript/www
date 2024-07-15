@@ -7,6 +7,15 @@ layout: layout/base.njk
     {% include "style/post.css" %}
 {% endcss %}
 
+{%- html "head" %}
+    <meta name="og:type" content="article" />
+    <meta name="article:published_time" content="{{ date | readableDate }}" />
+    <meta name="article:author" content="https://{{ config.hostname }}/about" />
+    {% for tag in tags | filterTags %}
+        <meta name="article:tag" content="{{ tag }}" />
+    {% endfor %}
+{% endhtml %}
+
 <main>
     <article>
         <dl class="table">
