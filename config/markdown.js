@@ -48,16 +48,16 @@ const md = new MarkdownIt({
             const url = new URL(tokens[idx].attrGet("href"));
             if (url.hostname === config.hostname) return;
 
-            tokens[idx].attrPush([
-                "style",
-                `--indieweb: url("https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(
-                    `${url.protocol}//${url.hostname}`,
-                )}"); ${
-                    darkReplacement[url.hostname] !== undefined
-                        ? `--indieweb-dark-override: url("${darkReplacement[url.hostname]}");`
-                        : ""
-                } ${tokens[idx].attrGet("style") ?? ""}`,
-            ]);
+            let style = tokens[idx].attrGet("style") ?? "";
+            style += `--indieweb: url("https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(
+                `${url.protocol}//${url.hostname}`,
+            )}");`;
+
+            if (url.hostname in darkReplacement) {
+                style += `--indieweb-dark-override: url("${darkReplacement[url.hostname]}");`;
+            }
+
+            tokens[idx].attrPush(["style", style]);
         } catch {
             // do nothing if href is not a valid URL
         }
