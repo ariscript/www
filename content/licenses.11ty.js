@@ -1,13 +1,16 @@
-const { promisify } = require("node:util");
-const { readFile } = require("node:fs/promises");
-const licenseChecker = promisify(require("license-checker").init);
+import { promisify } from "node:util";
+import { readFile } from "node:fs/promises";
+
+const licenseChecker = promisify((await import("license-checker")).init);
 
 const PACKAGE_NAME = `${process.env["npm_package_name"]}@${process.env["npm_package_version"]}`;
 
-class Licenses {
+export default class Licenses {
     data() {
         return {
             title: "OSS Licenses",
+            description:
+                "The open source libraries that make this website work",
             layout: "layout/base.njk",
         };
     }
@@ -103,5 +106,3 @@ class Licenses {
         `;
     }
 }
-
-module.exports = Licenses;
