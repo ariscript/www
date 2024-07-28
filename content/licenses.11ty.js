@@ -25,7 +25,7 @@ export default class Licenses {
             )
                 .filter(
                     ([packageName, info]) =>
-                        packageName != PACKAGE_NAME &&
+                        packageName !== PACKAGE_NAME &&
                         /.*\/.*?license[^\/]*$/i.test(info.licenseFile ?? ""),
                 )
                 .map(async ([packageName, info]) => [
