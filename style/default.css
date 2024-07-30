@@ -1,10 +1,10 @@
 :root {
     --text-color: #4c4f69; /* catppuccin text */
     --bg-color: #eff1f5; /* catppuccin base */
-    --link-color: #1e66f5; /* catpuccin lavender */
+    --link-color: #1e66f5; /* catpuccin blue */
     --name-color: #8839ef; /* catppuccin mauve */
     --caption-color: #5c5f77; /* catppuccin subtext 1 */
-    --text-font: Helvetica, sans-serif;
+    --text-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -17,7 +17,6 @@
     }
 }
 
-/* if you're printing this website, we need to talk */
 @media only print {
     :root {
         --text-color: black;
@@ -72,8 +71,8 @@ header {
 }
 
 header a.name {
-    font-size: 1.333rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 900;
     text-decoration: none;
     color: var(--name-color);
 }
