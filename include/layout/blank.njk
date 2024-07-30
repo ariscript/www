@@ -18,6 +18,16 @@
             name="og:description"
             content="{{ description or metadata.description }}"
         />
+
+        {% if "og-image" in tags %}
+            {% set ogSlug = page.url.slice(0, -1) %}
+            {% if ogSlug == "" %}
+                {% set ogSlug = "/index" %}
+            {% endif %}
+
+            <meta name="og:image" content="https://{{ config.hostname }}/img/og{{ ogSlug }}.png" />
+        {% endif %}
+
         <meta
             name="og:url"
             content="https://{{ config.hostname }}{{ page.url }}"

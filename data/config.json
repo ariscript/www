@@ -8,5 +8,6 @@
     },
     "repoUrl": "https://github.com/ariscript/www",
     "cssNakedDay": true,
-    "hostname": "ariscript.org"
+    "hostname": "ariscript.org",
+    "ogAvatar": "https://avatars.githubusercontent.com/u/57048370?s=32&v=4"
 }

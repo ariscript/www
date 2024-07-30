@@ -11,7 +11,7 @@ export default function filters(config) {
 
     config.addFilter("filterTags", (tags) =>
         // filter out tags that are for internal organization
-        (tags ?? []).filter((t) => !["posts"].includes(t)),
+        (tags ?? []).filter((t) => !["posts", "og-image"].includes(t)),
     );
 
     config.addFilter("readableDate", readableDate);
