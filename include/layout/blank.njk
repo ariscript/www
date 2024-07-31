@@ -25,7 +25,11 @@
                 {% set ogSlug = "/index" %}
             {% endif %}
 
-            <meta name="og:image" content="https://{{ config.hostname }}/img/og{{ ogSlug }}.png" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta 
+                name="og:image"
+                content="https://{{ config.hostname }}/img/og{{ ogSlug }}.png"
+            />
         {% endif %}
 
         <meta
