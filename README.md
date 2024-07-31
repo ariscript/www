@@ -21,9 +21,12 @@ needs advance approval from myself.
 Content includes any files in the `content/` or `data/` directories, except:
 
 -   the `content/feed/` directory
+-   `content/content.11tydata.js`
 -   `content/blog.njk`
+-   `content/blog/blog.11tydata.js`
 -   `content/tags.njk`
--   `content/licenses.11ty.cjs`
+-   `content/licenses.11ty.js`
+-   `content/og.11ty.js`
 -   the keys of `data/config.json`
 -   the keys of `data/feed.json`
 
@@ -32,5 +35,5 @@ This list may (and likely will) change to include some new files if necessary.
 ## Credit
 
 A lot of this has been monkey-patched together from
-[Evan Boehs' website](https://github.com/boehs/site) and
-[eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
+[Evan Boehs' website](https://github.com/boehs/site) (licensed AGPL) and
+[eleventy-base-blog](https://github.com/11ty/eleventy-base-blog) (licensed MIT).
