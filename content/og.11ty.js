@@ -50,9 +50,9 @@ export default class Og {
                                         props: {
                                             children: item.data.title,
                                             style: {
-                                                fontSize: 32,
+                                                fontSize: 64,
                                                 fontWeight: "bold",
-                                                marginBottom: 16,
+                                                marginBottom: 32,
                                             },
                                         },
                                     },
@@ -61,7 +61,7 @@ export default class Og {
                                         props: {
                                             children: item.data.description,
                                             style: {
-                                                fontSize: 20,
+                                                fontSize: 40,
                                             },
                                         },
                                     },
@@ -80,8 +80,8 @@ export default class Og {
                                         type: "img",
                                         props: {
                                             src: config.ogAvatar,
-                                            width: 32,
-                                            height: 32,
+                                            width: 64,
+                                            height: 64,
                                             style: {
                                                 borderRadius: "50%",
                                             },
@@ -92,8 +92,8 @@ export default class Og {
                                         props: {
                                             children: config.author.name,
                                             style: {
-                                                fontSize: 20,
-                                                margin: 16,
+                                                fontSize: 40,
+                                                margin: 32,
                                             },
                                         },
                                     },
@@ -117,13 +117,13 @@ export default class Og {
                         backgroundColor: "#24273a",
                         fontFamily: "Inter",
                         color: "#cad3f5",
-                        padding: 16,
+                        padding: 32,
                     },
                 },
             },
             {
-                width: 600,
-                height: 400,
+                width: 1200,
+                height: 800,
                 fonts: [
                     {
                         name: "Inter",
