@@ -1,10 +1,12 @@
 import prettier from "prettier";
+import { createRequire } from "node:module";
+const require = createRequire(import.meta.url);
 
 import plugins from "./config/plugins.js";
 import filters, { readableDate } from "./config/filters.js";
 import markdown from "./config/markdown.js";
 
-const OUT_DIR = "dist/";
+const PRETTIER_CONFIG = require("./.prettierrc.json");
 
 export default function conf(config) {
     const md = markdown();
@@ -29,8 +31,7 @@ export default function conf(config) {
         ) {
             return await prettier.format(content, {
                 filepath: this.page.outputPath,
-                tabWidth: 4,
-                proseWrap: "always",
+                ...PRETTIER_CONFIG,
             });
         }
 
@@ -43,7 +44,7 @@ export default function conf(config) {
         htmlTemplateEngine: "njk",
         dir: {
             input: "content",
-            output: OUT_DIR,
+            output: "./dist/",
             includes: "../include", // top-level include directory
             data: "../data", // top-level data directory
         },
