@@ -12,14 +12,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/starmut/www.git"
+        "url": "git+https://github.com/ariscript/www.git"
     },
     "author": "Ari Prakash",
     "license": "AGPL-3.0-or-later",
     "bugs": {
-        "url": "https://github.com/starmut/www/issues"
+        "url": "https://github.com/ariscript/www/issues"
     },
-    "homepage": "https://github.com/starmut/www#readme",
+    "homepage": "https://github.com/ariscript/www#readme",
     "devDependencies": {
         "@11ty/eleventy": ">=3.0.0-alpha",
         "@11ty/eleventy-plugin-bundle": "^2.0.2",
