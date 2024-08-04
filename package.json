@@ -7,6 +7,7 @@
     "type": "module",
     "scripts": {
         "build": "npx @11ty/eleventy",
+        "rebuild": "npm run clean; npm run build",
         "dev": "npx @11ty/eleventy --serve",
         "clean": "rm -rf dist/"
     },
