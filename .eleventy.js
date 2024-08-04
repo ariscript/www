@@ -25,7 +25,7 @@ export default function conf(config) {
 
     config.addTransform("prettier", async function (content) {
         if (
-            [".html", ".css", ".js"].some((x) =>
+            [".html", ".css", ".js", ".json"].some((x) =>
                 this.page.outputPath.endsWith(x),
             )
         ) {
