@@ -8,10 +8,12 @@ permalink: /feed/feed.json
 	"home_page_url": "{{ feed.url | addPathPrefixToFullUrl }}",
 	"feed_url": "{{ permalink | htmlBaseUrl(feed.url) }}",
 	"description": "{{ feed.description }}",
-	"author": {
-		"name": "{{ config.author.name }}",
-		"url": "{{ feed.url }}"
-	},
+	"authors": [
+		{
+			"name": "{{ config.author.name }}",
+			"url": "{{ feed.url }}"
+		}
+	],
 	"items": [
 		{%- for post in collections.posts | reverse %}
 		{%- set absolutePostUrl = post.url | htmlBaseUrl(feed.url) %}
@@ -19,6 +21,7 @@ permalink: /feed/feed.json
 			"id": "{{ absolutePostUrl }}",
 			"url": "{{ absolutePostUrl }}",
 			"title": "{{ post.data.title }}",
+			"summary": "{{ post.data.description }}",
 			"content_html": {% if post.templateContent %}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | dump | safe }}{% else %}""{% endif %},
 			"date_published": "{{ post.date | dateToRfc3339 }}"
 		}
