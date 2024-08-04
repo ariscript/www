@@ -8,6 +8,27 @@
     }
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+.title-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-icon-container > .icons {
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
 .posts-list {
     padding-inline-start: 0;
 }
