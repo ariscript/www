@@ -14,8 +14,6 @@ layout: layout/base.njk
 
 {% endhtml %}
 
-{# not using the usual "#" prefix to prevent the anchor from appearing #}
-
 <h1>About</h1>
 
 I am a 19-year-old trans woman, and a student at

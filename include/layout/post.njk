@@ -16,26 +16,24 @@ layout: layout/base.njk
     {% endfor %}
 {% endhtml %}
 
-<main>
-    <article>
-        <dl class="table">
-            <dt>Date</dt>
-            <dd>{{ date | readableDate }}</dd>
-            <dt>Tags</dt>
-            <dd>
-                <ul>
-                    {% for tag in tags | filterTags %}
-                        <li>
-                            <a href="/tags/{{ tag }}">{{ tag }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </dd>
-            <dt>License</dt>
-            <dd>{{ license }}</dd>
-        </dl>
-        <section>
-            {{ content | safe }}
-        </section>
-    </article>
-</main>
+<article>
+    <dl class="table">
+        <dt>Date</dt>
+        <dd>{{ date | readableDate }}</dd>
+        <dt>Tags</dt>
+        <dd>
+            <ul>
+                {% for tag in tags | filterTags %}
+                    <li>
+                        <a href="/tags/{{ tag }}">{{ tag }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </dd>
+        <dt>License</dt>
+        <dd>{{ license }}</dd>
+    </dl>
+    <section>
+        {{ content | safe }}
+    </section>
+</article>

@@ -4,6 +4,10 @@ layout: layout/blank.njk
 
 {% include "partials/header.njk" %}
 
-{{ content | safe }}
+<main>
+    <article>
+        {{ content | safe }}
+    </article>
+</main>
 
 {% include "partials/footer.njk" %}
