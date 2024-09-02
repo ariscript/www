@@ -54,7 +54,12 @@
         
         {% getBundle "html", "head" %}
 
-        {%- css %}{% include "style/default.css" %}{% endcss %}
+        {%- css %}
+            {% include "style/default.css" %}
+            {% if config.banner %}
+                {% include "style/banner.css" %}
+            {% endif %}
+        {% endcss %}
 
         <style>
             {% getBundle "css" %}
@@ -65,6 +70,10 @@
         {% endif %}
     </head>
     <body>
+        {% if config.banner %}
+            {% include "partials/banner.njk" %}
+        {% endif %}
+        
         {% if config.cssNakedDay %}
             <section id="css-naked-day">
                 Today is April 9 (somewhere on earth), which is

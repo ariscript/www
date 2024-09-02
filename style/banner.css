@@ -1,0 +1,20 @@
+body:has(#banner) {
+    /* banner takes 2rem vertical space, so total 3rem to maintain appearance */
+    padding-top: 3rem;
+}
+
+#banner {
+    position: absolute;
+    top: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: var(--bg);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    #banner {
+        background-color: var(--dark-bg);
+    }
+}
