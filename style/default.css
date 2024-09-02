@@ -115,16 +115,18 @@ a:visited {
     text-decoration: underline;
 }
 
-a[style*="--indieweb:"]::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 1rem;
-    height: 1rem;
-    margin: 0.2rem;
-    border-radius: 3px;
-    background-size: contain;
-    background-image: var(--indieweb);
+@media only screen {
+    a[style*="--indieweb:"]::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 1rem;
+        height: 1rem;
+        margin: 0.2rem;
+        border-radius: 3px;
+        background-size: contain;
+        background-image: var(--indieweb);
+    }
 }
 
 @media only screen and (prefers-color-scheme: dark) {
