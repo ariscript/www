@@ -30,6 +30,10 @@ Content includes any files in the `content/` or `data/` directories, except:
 -   the keys of `data/config.json`
 -   the keys of `data/feed.json`
 
+Content also includes the following outside of the mentioned directories:
+
+-   `include/partials/banner.njk`
+
 This list may (and likely will) change to include some new files if necessary.
 
 ## Credit
