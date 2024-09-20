@@ -18,8 +18,12 @@ layout: layout/base.njk
 
 <article>
     <dl class="table">
-        <dt>Date</dt>
+        <dt>Published</dt>
         <dd>{{ date | readableDate }}</dd>
+        {% if updated %}
+            <dt>Updated</dt>
+            <dd>{{ updated | readableDate }}</dd>
+        {% endif %}
         <dt>Tags</dt>
         <dd>
             <ul>
