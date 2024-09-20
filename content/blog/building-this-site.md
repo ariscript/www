@@ -1,6 +1,6 @@
 ---
 title: Building This Website
-description: An exploration of beauty in simplicity
+description: Write your own markup for fun and profit
 date: 2024-07-12
 updated: 2024-09-20
 tags:
