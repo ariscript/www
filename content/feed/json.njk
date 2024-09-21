@@ -24,6 +24,7 @@ permalink: /feed/feed.json
 			"summary": "{{ post.data.description }}",
 			"content_html": {% if post.templateContent %}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | dump | safe }}{% else %}""{% endif %},
 			"date_published": "{{ post.date | dateToRfc3339 }}"
+			{% if post.data.updated %},"date_modified":  "{{ post.data.updated | dateToRfc3339 }}"{% endif %}
 		}
 		{% if not loop.last %},{% endif %}
 		{%- endfor %}

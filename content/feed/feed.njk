@@ -18,7 +18,7 @@ permalink: /feed/feed.xml
         <entry>
             <title>{{ post.data.title }}</title>
             <link href="{{ absolutePostUrl }}" />
-            <updated>{{ post.date | dateToRfc3339 }}</updated>
+            <updated>{{ (post.data.updated or post.date) | dateToRfc3339 }}</updated>
             <id xmlns:xlink="{{ absolutePostUrl }}" xlink:type="simple">{{ post.url }}</id>
             <content type="html">{{ post.url }}</content>
             <summary>{{ post.data.description }}</summary>
