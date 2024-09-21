@@ -139,6 +139,10 @@ a:visited {
     display: none;
 }
 
+.big {
+    font-size: 2rem;
+}
+
 pre[class*="language-"] {
     border-radius: 1rem;
 }
