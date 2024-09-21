@@ -32,14 +32,14 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-article > dl.table {
-    min-width: 50%;
-}
+    & > dl.table {
+        min-width: 50%;
 
-article > dl.table > dd {
-    justify-self: end;
+        & > dd {
+            justify-self: end;
+        }
+    }
 }
 
 a.header-anchor {
@@ -78,22 +78,23 @@ h4 {
 table {
     min-width: 80%;
     margin: 0.5rem auto;
-}
 
-thead {
-    background-color: var(--thead-color);
-}
+    & > thead {
+        background-color: var(--thead-color);
+    }
 
-table :is(th, td) {
-    padding: 0.25rem 0.5rem;
-}
+    & > tbody {
+        & > tr {
+            background-color: var(--tr-odd-color);
+        }
+        & > tr:nth-of-type(even) {
+            background-color: var(--tr-even-color);
+        }
+    }
 
-tbody > tr {
-    background-color: var(--tr-odd-color);
-}
-
-tbody > tr:nth-of-type(even) {
-    background-color: var(--tr-even-color);
+    & :is(th, td) {
+        padding: 0.25rem 0.5rem;
+    }
 }
 
 figure.c-blockquote > blockquote {

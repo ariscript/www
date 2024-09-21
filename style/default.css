@@ -65,13 +65,13 @@ footer {
 
 header {
     flex-direction: column;
-}
 
-header a.name {
-    font-size: 1.5rem;
-    font-weight: 900;
-    text-decoration: none;
-    color: var(--name-color);
+    & a.name {
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-decoration: none;
+        color: var(--name-color);
+    }
 }
 
 dl.table {
@@ -80,29 +80,29 @@ dl.table {
     align-items: self-end;
     gap: 0.5rem 1rem;
     width: max-content;
-}
 
-dl.table > :is(dt, dd) {
-    padding-inline: 0.5rem;
-}
+    & > :is(dt, dd) {
+        padding-inline: 0.5rem;
+    }
 
-dl.table > dt {
-    font-weight: bold;
-}
+    & > dt {
+        font-weight: bold;
+    }
 
-dl.table > dd {
-    margin: 0;
-}
+    & > dd {
+        margin: 0;
 
-dl.table > dd > ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: max-content;
-    gap: 2rem;
-    list-style-type: none;
+        & > ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: max-content;
+            gap: 2rem;
+            list-style-type: none;
+        }
+    }
 }
 
 :is(h1, h2, h3, h4, h5, h6):not(:hover) > a.header-anchor {
