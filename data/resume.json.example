@@ -1,0 +1,16 @@
+{
+    "contact": {
+        "phone": {
+            "href": "tel:+00000000000",
+            "display": "+0 (000) 000-0000"
+        },
+        "email": {
+            "href": "mailto:fake@email.invalid",
+            "display": "fake@email.invalid"
+        },
+        "linkedin": {
+            "href": "https://www.linkedin.com/in/me",
+            "display": "linkedin.com/in/me"
+        }
+    }
+}

@@ -1,0 +1,376 @@
+---
+title: Resumé
+description: My (public) resumé.
+---
+
+<!doctype html>
+
+<!--
+# README
+
+Intended to be set on US Letter or A4 paper, with 0.5 inch margins.
+Optimized for PDF export or printing to paper.
+The accompanying CSS file is naturally very important.
+
+LICENSE: All Rights Reserved.
+This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Content.
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style/default.css" media="only screen" />
+        <link rel="stylesheet" href="/style/resume.css" />
+
+        <!--
+        Head from blank is useful here, but setting layout
+        will cause CSS issues, and break Prettier
+        -->
+        <title>{{ title }} | {{ config.author.name }}</title>
+        <meta
+            name="description"
+            content="{{ description or metadata.description }}"
+        />
+        <meta name="generator" content="{{ eleventy.generator }}" />
+
+        <meta name="og:title" content="{{ title }}" />
+        <meta
+            name="og:description"
+            content="{{ description or metadata.description }}"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="og:image"
+            content="https://{{ config.hostname }}/img/og/resume.png"
+        />
+
+        <meta
+            name="og:url"
+            content="https://{{ config.hostname }}{{ page.url }}"
+        />
+        <meta name="og:locale" content="en_US" />
+        <meta name="og:site_name" content="{{ config.author.name }}" />
+    </head>
+    <body>
+        <section id="banner">
+            <p>
+                This is my public resumé. If you're an employer and want
+                additional details, please get in touch with me.
+            </p>
+            <p>
+                This page is intended to be exported to PDF or printed to
+                Letter/A4 paper.
+            </p>
+        </section>
+
+        <header>
+            <h1 class="name">{{ config.author.name }}</h1>
+            <ul class="horiz-list">
+                <li>
+                    <a href="{{ resume.contact.phone.href }}" rel="me">
+                        {{ resume.contact.phone.display or 'Phone Number' }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ resume.contact.email.href }}" rel="me">
+                        {{ resume.contact.email.display or 'Email address' }}
+                    </a>
+                </li>
+                <li>
+                    <a href="/" target="_blank" rel="noopener me">
+                        {{ config.hostname }}
+                    </a>
+                </li>
+            </ul>
+            <ul class="horiz-list">
+                <li>Boston, MA</li>
+                <li>
+                    <a
+                        href="{{ resume.contact.linkedin.href }}"
+                        target="_blank"
+                        rel="noopener me"
+                    >
+                        {{ resume.contact.linkedin.display or 'LinkedIn Profile' }}
+                    </a>
+                </li>
+                <li>Availability: Jan &ndash; Jun 2025</li>
+            </ul>
+        </header>
+        <main>
+            <section id="education">
+                <h2>Education</h2>
+                <section class="experience">
+                    <div class="head">
+                        <div>
+                            <h3><b>Northeastern University</b>, Boston, MA</h3>
+                            <p>
+                                <b>Khoury College of Computer Sciences</b>
+                            </p>
+                            <p>
+                                Candidate for BS in Computer Science, Minor in
+                                Mathematics
+                            </p>
+                        </div>
+                        <div class="timeframe">
+                            <p>Sep 2023 &ndash; Present</p>
+                            <p>Graduation: May 2027</p>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="horiz-list">
+                            <li>GPA: 3.98 / 4.00</li>
+                            <li>Dean's list: Fall 2023, Spring 2024</li>
+                        </ul>
+                        <div class="coursework">
+                            <div>Coursework:</div>
+                            <p>
+                                Algorithms (graduate-level), Object-oriented
+                                Design, Foundations of Data Science,
+                                Fundamentals of Computer Science 1 & 2
+                                (accelerated), Discrete Structures
+                                (accelerated), Logic & Computation, Theory of
+                                Computation, Graph theory, Linear Algebra
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section class="experience">
+                    <div class="head">
+                        <div>
+                            <h3><b>Quincy High School</b>, Quincy, MA</h3>
+                            <p>High School Diploma, PLTW Engineering Diploma</p>
+                        </div>
+                        <div class="timeframe">
+                            <p>Sep 2019 &ndash; Jun 2023</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>GPA: 5.0 / 5.5</p>
+                        <div class="coursework">
+                            <div>Coursework:</div>
+                            <p>
+                                AP Computer Science A, AP Calculus AB & BC, PLTW
+                                Digital Electronics, PLTW Digital Design &
+                                Development
+                            </p>
+                        </div>
+                    </div>
+                </section> -->
+                <section class="experience">
+                    <div class="head">
+                        <div>
+                            <h3><b>Harvard Summer School</b>, Cambridge, MA</h3>
+                        </div>
+                        <div class="timeframe">
+                            <p>Jun &ndash; Aug 2021</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="coursework">
+                            <div>Coursework:</div>
+                            <p>Introduction to Artificial Intelligence</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="technical">
+                <h2>Technical Knowledge</h2>
+                <dl class="experience">
+                    <dt><h3>Technologies:</h3></dt>
+                    <dd>
+                        <ul class="horiz-list">
+                            <li>JavaScript/TypeScript</li>
+                            <li>Node.js</li>
+                            <li>React</li>
+                            <li>HTML/CSS</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>Rust</li>
+                            <li>SQL</li>
+                            <li>Git</li>
+                        </ul>
+                    </dd>
+                    <dt><h3>Systems:</h3></dt>
+                    <dd>
+                        <ul class="horiz-list">
+                            <li>Windows</li>
+                            <li>macOS</li>
+                            <li>Linux</li>
+                            <li>UNIX</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <section class="experience">
+                    <div class="head">
+                        <h3><b>mc-query</b></h3>
+                        <div class="timeframe">Jul 2022 &ndash; Present</div>
+                    </div>
+                    <ul class="work-description">
+                        <li>
+                            Published a library written in Rust to query
+                            Minecraft servers, and securely run commands
+                        </li>
+                        <li>
+                            Responded to user issues, pull requests, and read
+                            low-level network protocol specifications
+                        </li>
+                    </ul>
+                </section>
+                <section class="experience">
+                    <div class="head">
+                        <h3><b>Multiserver</b></h3>
+                        <div class="timeframe">Nov 2021 &ndash; Mar 2023</div>
+                    </div>
+                    <ul class="work-description">
+                        <li>
+                            Created Electron app to solve a personal need:
+                            managing many Minecraft servers using a React GUI
+                        </li>
+                        <li>
+                            Used inter-process communication to manage other
+                            programs or call APIs to create and run servers
+                        </li>
+                    </ul>
+                </section>
+                <section class="experience">
+                    <div class="head">
+                        <h3><b>Stock Portfolio Analysis (Assignment)</b></h3>
+                        <div class="timeframe">
+                            <p>May &ndash; Jun 2024</p>
+                        </div>
+                    </div>
+                    <ul class="work-description">
+                        <li>
+                            Implemented an MVC app to manage a user's stock
+                            portfolio using Object-Oriented Design principles
+                        </li>
+                        <li>
+                            Used a stock price API to provide historical price
+                            data and portfolio rebalancing to custom ratios
+                        </li>
+                    </ul>
+                </section>
+                <!-- <section class="experience">
+                    <div class="head">
+                        <h3><b>Rush Hour/Klotski (Assignment)</b></h3>
+                        <div class="timeframe">Mar &ndash; Apr 2024</div>
+                    </div>
+                    <ul class="work-description">
+                        <li>
+                            Collaborated with partner to create the games of
+                            Rush Hour and Klotski Object-Oriented Design
+                            patterns
+                        </li>
+                        <li>
+                            Reviewed other groups' implementations to see other
+                            ways of solving problems and inspire future parts
+                        </li>
+                    </ul>
+                </section> -->
+            </section>
+            <section id="work">
+                <h2>Work Experience</h2>
+                <section class="experience">
+                    <div class="head">
+                        <div>
+                            <h3><b>Northeastern University</b>, Boston, MA</h3>
+                            <p>
+                                <b>Teaching Assistant:</b>
+                                Fundamentals of CS 1 (accelerated) & 2
+                            </p>
+                        </div>
+                        <div class="timeframe">
+                            <p>Sep 2024 &ndash; Present</p>
+                            <p>Jun &ndash; Jul 2024</p>
+                        </div>
+                    </div>
+                    <ul class="work-description">
+                        <li>
+                            Support professor by proofreading assignments/labs,
+                            and writing example solutions
+                        </li>
+                        <li>
+                            Provide feedback to student assignments and exams
+                            via grading
+                        </li>
+                        <li>
+                            Hold semi-weekly office hours to help individual
+                            students and groups understand complex topics
+                        </li>
+                    </ul>
+                </section>
+                <section class="experience">
+                    <div class="head">
+                        <div>
+                            <h3>
+                                <b>Knack Tutoring, Northeastern University</b>,
+                                Boston, MA
+                            </h3>
+                            <p><b>Peer Tutor:</b> Multiple Courses</p>
+                        </div>
+                        <div class="timeframe">
+                            <p>Jan 2024 &ndash; Present</p>
+                        </div>
+                    </div>
+                    <ul class="work-description">
+                        <li>
+                            Tutor students on important course topics in
+                            computer science and mathematics
+                        </li>
+                        <li>
+                            Plan for, schedule, and manage tutoring sessions
+                            with multiple students
+                        </li>
+                        <li>
+                            Work towards CRLA L1 and L2 certifications and apply
+                            those skills in tutoring sessions
+                        </li>
+                    </ul>
+                </section>
+                <section class="experience">
+                    <div class="head">
+                        <div>
+                            <h3><b>Code In Place</b>, Remote</h3>
+                            <p><b>Section Leader</b></p>
+                        </div>
+                        <div class="timeframe">
+                            <p>May &ndash; Jul 2024</p>
+                        </div>
+                    </div>
+                    <ul class="work-description">
+                        <li>
+                            Mentored students from around the world in
+                            introductory programming topics
+                        </li>
+                        <li>
+                            Reviewed weekly lecture material in highly
+                            interactive section meetings
+                        </li>
+                        <li>
+                            Provided guidance and support to students that
+                            wanted to pursue further computer science education
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section id="interests">
+                <h2>Interests</h2>
+                <div class="experience">
+                    <ul class="horiz-list">
+                        <li>Electronics</li>
+                        <li>Mathematics</li>
+                        <li>Tennis</li>
+                        <li>Hiking</li>
+                        <li>Volunteering</li>
+                        <li>Activism</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

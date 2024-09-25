@@ -11,9 +11,8 @@ const PRETTIER_CONFIG = require("./.prettierrc.json");
 export default function conf(config) {
     const md = markdown();
 
-    config.addPassthroughCopy({
-        "./public": "/",
-    });
+    config.addPassthroughCopy({ "./public": "/" });
+    config.addPassthroughCopy({ "./style": "/style" });
     config.addWatchTarget("content/**/*.{svg,png,jpeg,webp}");
     config.addWatchTarget("style/**/*.css");
 

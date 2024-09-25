@@ -37,5 +37,7 @@ ultimately have control over what code is being run on their computers, and the
 freedom to see how the programs they use work. I strive to make all my publicly
 available code free to use.
 
-I'm currently open to be hired for co-op! If you're an employer and want to see
-my resumé, find a way to get in contact with me.
+I'm currently open to be hired for co-op! The public version of my resumé can be
+found right [on my website](/resume)! Remember that it's designed for PDF export
+and not to be looked at in a browser. If you're an employer and want to see the
+real deal, please contact me privately.

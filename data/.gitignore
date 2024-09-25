@@ -1,0 +1,10 @@
+# This file contains the differences between my public and private resumés.
+# The specific keys needed to make the private version of the page are
+# listed in resume.json.example, which can be modified to have different
+# information if necessary.
+
+# My LinkedIn is not private per se, but I wanted to keep that external link
+# configurable.
+
+# Hopefully, you're not just stealing my resumé design though.
+resume.json
