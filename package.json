@@ -22,23 +22,23 @@
     },
     "homepage": "https://github.com/ariscript/www#readme",
     "devDependencies": {
-        "@11ty/eleventy": ">=3.0.0-alpha",
+        "@11ty/eleventy": "^3.0.0",
         "@11ty/eleventy-plugin-bundle": "^2.0.2",
         "@11ty/eleventy-plugin-rss": "^1.2.0",
         "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
         "@resvg/resvg-js": "^2.6.2",
         "@types/license-checker": "^25.0.6",
-        "@types/node": "^20.12.13",
-        "@vscode/markdown-it-katex": "^1.0.3",
+        "@types/node": "^20.17.6",
+        "@vscode/markdown-it-katex": "^1.1.0",
         "license-checker": "^25.0.1",
         "markdown-it": "^14.1.0",
-        "markdown-it-anchor": "^9.0.1",
+        "markdown-it-anchor": "^9.2.0",
         "markdown-it-attribution": "^0.1.4",
         "markdown-it-container": "^4.0.0",
         "markdown-it-footnote": "^4.0.0",
         "markdown-it-for-inline": "^2.0.1",
         "markdown-it-image-figures": "^2.1.1",
-        "prettier": "^3.2.5",
+        "prettier": "^3.3.3",
         "satori": "^0.10.14"
     }
 }
