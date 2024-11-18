@@ -18,9 +18,39 @@ freshman, what changes or doesn't have a major impact on my education, my path
 at Northeastern, and my career beyond.
 
 While I cannot speak on the changes to higher-level courses, I can talk about
-the change from Racket to Python for Fundies 1/2.
+the change from Racket to Python for Fundies 1.
 
-## Changing Fundies 1 and 2 from HTDP Racket to Python
+## Who am I?
+
+My name is Seth, and I am a current F1a student. This blog's author happens to
+be one of my TAs as I'm sure they've mentioned. Huge thanks to them for allowing
+me to speak my mind on their blog.
+
+Before Northeastern I'd been coding for around 7-8 years, mostly making projects
+that I found fun or interesting. Recently, that has extended to more
+professional projects as I look to enrich my skills to prepare for co-op and
+life beyond Northeastern.
+
+Admittedly, I am not well qualified to talk about the changes to the curriculum.
+I am confident that many of my fellow students have more direct reasoning for
+why we as a whole disapprove of this change. That is why, instead, I'd like to
+talk about how F1a has changed everything I know about programming, how I
+program, and everything in between.
+
+The above sentiment is something I've heard from plenty of my fellow F1a
+classmates. That simple fact is astounding to me; 8 years of habits, skills, and
+ideas, completely altered and changed over the course of a single 3-month class.
+Data Definitions, design recipes, breaking apart tasks into functions that do
+only one part of it, all of this has infected the way in which I code, and has,
+without question, made me a better programmer.
+
+It is my belief that moving away from HTDP Racket as the introductory CS course
+at Northeastern will deprive future students of learning how to program coherent
+and legible programs. Further, HTDP Racket teaches students how to build their
+programs from the most basic of data into complicated, beautiful ideas, and do
+that in a legible way.
+
+## Changing Fundies 1 from HTDP Racket to Python
 
 ### Why this seems good:
 
@@ -68,14 +98,14 @@ the change from Racket to Python for Fundies 1/2.
 
 ## Ideas 4 and 5
 
--   I think these are the strongest reasons for beginning to teach Fundies 1 and
-    2 in Python, and I agree with them.
+-   I think these are the strongest reasons for beginning to teach Fundies 1 in
+    Python, and I agree with them.
 -   However, I think teaching Python as the first course in the CS Curriculum
     deprives CS majors of important fundamental skills
 -   Therefore, I would like to propose a new standalone course (or series
     thereof) that teaches Python and can accommodate students new to programming
 
-### Why a new course instead of altering Fundies?
+### A Potential Solution
 
 -   I've already explained above why Python for the start of the Fundies
     curriculum can teach new students bad habits.
@@ -115,3 +145,15 @@ as a beginning coding experience, especially for those unsure about programming.
 I believe a parallel course to Fundies taught in Python solves these issues,
 maintaining the virtues that Racket teaches while giving a separate path to
 learning programming with more emphasis on practicality and immediate learning.
+
+I realize the hypocrisy in my statements, saying that I am not qualified to talk
+about the changes to the CS curriculum as a whole, and then providing a solution
+to the issue. I'd like to chalk that up to my naivety in both programming as a
+whole and the CS curriculum at Northeastern. But isn't that the entire argument?
+I used to be a very naive programmer, one that never tested, barely considered
+types, and one that did not care about readability. Now, all of these define how
+I approach programming. Objectively, that makes me a better programmer. I
+attribute all of that to the HTDP Racket ideology. This growth would have been
+impossible, or quite challenging to achieve if I was taught in a different
+language. Removing that from the graduates Northeastern produces, I find, would
+be a tragedy.
