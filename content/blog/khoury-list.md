@@ -11,6 +11,8 @@ tags:
 -   [To Khoury College](/blog/khoury) written by myself
 -   [An Opinion on Proposed CS Curriculum Changes](/blog/khoury-seth) by current
     F1a student Seth Margolin
+-   [In Defense of Fundies](https://owen.duckham.dev/blog/defense-of-fundies) by
+    former F1a student and currnet F1 TA Owen Duckham
 
 This list will be updated as I recieve more articles from people. If you have
 thoughts that you want posted here, please reach out to me through either email
