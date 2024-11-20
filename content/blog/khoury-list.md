@@ -41,5 +41,5 @@ individual posts:
 > Computer science is hard, and students need to struggle to truly understand
 > it.
 >
-> -- [Federico Cassano](https://federico.codes), Research scientist, TA for
-> compilers, Former NUCCDC Captain
+> -- [Federico Cassano](https://federico.codes), Research scientist @ Cursor, TA
+> for compilers, Former NUCCDC Captain
