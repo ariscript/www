@@ -2,6 +2,7 @@
 title: To Khoury College
 description: The Students Don't Want This.
 date: 2024-11-18
+updated: 2024-11-20
 license: CC-BY 4.0
 tags:
     - education
@@ -81,8 +82,11 @@ people to pass them. In a classic case of
 courses to chase better statistics will end up in providing a worse educational
 experience where more people pass, but everyone learns less as a result.
 Admitting that classes need to become easier in order for more students to pass
-them is an indictment of the faculty teaching them and an abdication of
-responsibility to provide students with the best possible education.
+them is a failing from the administration and shows the lack of support systems
+in place for students to get the best education possible.
+
+n indictment of the faculty teaching them and an abdication of responsibility to
+provide students with the best possible education.
 
 ## My Personal Experience
 
@@ -175,8 +179,8 @@ compilers, and potentially do research in the [PRL](https://prl.ccs.neu.edu).
 ## Other Testimonies
 
 I'm not the only one having these feelings about the course changes, and there
-are many others that want to share their own opinion; I'll link to them in
-[this list](/blog/khoury-list) and update it regularly.
+are many others that want to share their own opinion; I'll link to them on
+[the Voices page](voices) and update it regularly.
 
 Please note that this article is licensed CC-BY 4.0 in the hopes that this
 allows further reach. I only ask that you credit anything from this article to

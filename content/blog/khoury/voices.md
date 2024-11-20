@@ -1,13 +1,13 @@
 ---
-title: "Khoury Changes: Opinions"
+title: "Khoury Changes: Voices"
 description: A collection of thoughts on Khoury's upcoming course changes
 date: 2024-11-18
-updated: 2024-11-19
+updated: 2024-11-20
 tags:
     - education
 ---
 
-# Khoury Changes: Opinions
+# Khoury Changes: Voices
 
 -   [To Khoury College](/blog/khoury) written by myself
 -   [An Opinion on Proposed CS Curriculum Changes](/blog/khoury-seth) by current
