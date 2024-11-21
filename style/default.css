@@ -25,6 +25,10 @@
     }
 }
 
+#css-naked-day {
+    display: none;
+}
+
 :root {
     font-family: var(--text-font);
     font-size: 18px;
@@ -51,8 +55,10 @@ body > * {
     width: min(768px, 100%);
 }
 
-#css-naked-day {
-    display: none;
+a,
+a:visited {
+    color: var(--link-color);
+    text-decoration: underline;
 }
 
 header,
@@ -79,7 +85,6 @@ dl.table {
     grid-template-columns: 1fr 3fr;
     align-items: self-end;
     gap: 0.5rem 1rem;
-    width: max-content;
 
     & > :is(dt, dd) {
         padding-inline: 0.5rem;
@@ -107,12 +112,6 @@ dl.table {
 
 :is(h1, h2, h3, h4, h5, h6):not(:hover) > a.header-anchor {
     display: none;
-}
-
-a,
-a:visited {
-    color: var(--link-color);
-    text-decoration: underline;
 }
 
 @media only screen {

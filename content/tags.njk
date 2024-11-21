@@ -15,8 +15,10 @@ eleventyComputed:
 permalink: /tags/{{ tag | slugify }}/
 ---
 
-<h1>Tag: {{ tag }}</h1>
-
-{% set posts = collections[tag] %}
-
-{% include "partials/posts.njk" %}
+<article>
+    <h1>Tag: {{ tag }}</h1>
+    
+    {% set posts = collections[tag] %}
+    
+    {% include "partials/posts.njk" %}
+</article>
