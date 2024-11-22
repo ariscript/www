@@ -16,6 +16,8 @@ tags:
     former F1a student and current F1 TA Owen Duckham
 -   [Thoughts on Northeastern's proposed curriculum redesign](https://natetheadequate.github.io/curriculum-redesign)
     by fourth-year Software Dev student Nate White
+-   [An Open Letter](https://melcer.dev/2024/11/20/open-letter-khoury-curriculum.html)
+    by current Khoury PhD student Daniel Melcer
 
 This list will be updated as I recieve more articles from people. If you have
 thoughts that you want posted here, please reach out to me through either email
