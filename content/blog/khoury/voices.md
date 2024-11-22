@@ -18,6 +18,8 @@ tags:
     by fourth-year Software Dev student Nate White
 -   [An Open Letter](https://melcer.dev/2024/11/20/open-letter-khoury-curriculum.html)
     by current Khoury PhD student Daniel Melcer
+-   [Fundies Curriculum Changes](https://blog.wakefield.fyi/#fundies) by
+    third-year Software Dev student Ben Wakefield
 
 This list will be updated as I recieve more articles from people. If you have
 thoughts that you want posted here, please reach out to me through either email
