@@ -2,7 +2,7 @@
 title: To Khoury College
 description: Hear Us Out.
 date: 2024-11-18
-updated: 2024-11-22
+updated: 2024-11-23
 license: CC-BY 4.0
 tags:
     - education
@@ -16,8 +16,9 @@ I must defend it in the hour of need.
 
 I want to make this very clear:
 
-> **We, the students of Khoury College, want our voices to be heard as these
-> changes to the curricula are being discussed.**
+> **[We, the students of Khoury College](https://change.org/savefundies)[^1],
+> want our voices to be heard as these changes to the curricula are being
+> discussed.**
 
 We are not asking to fully abandon the changes being worked on, some of the
 changes being discussed are net positives. What we do want is for representation
@@ -30,7 +31,7 @@ design, rather than teaching them to use the current tool du jour.
 This post will be updated as I cohere my thoughts further and have more to say,
 or as I get further information.
 
-> This post was heavily edited on Nov. 22 as my understanding of the situation
+> This post was heavily edited on Nov. 23 as my understanding of the situation
 > has changed significantly.
 
 ## Who am I?
@@ -220,3 +221,9 @@ are many others that want to share their own opinion; I'll link to them on
 Please note that this article is licensed CC-BY 4.0 in the hopes that this
 allows further reach. I only ask that you credit anything from this article to
 me, but you're free to use anything here.
+
+[^1]:
+    I was actually not involved with the creation of this petition, but it is a
+    clear indication of support from the general student population that they
+    support keeping the unique nature of our curriculum through whatever changes
+    may happen.
