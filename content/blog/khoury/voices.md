@@ -5,6 +5,7 @@ date: 2024-11-18
 updated: 2024-11-20
 tags:
     - education
+    - khoury
 ---
 
 # Khoury Changes: Voices

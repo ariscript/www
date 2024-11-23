@@ -6,6 +6,7 @@ updated: 2024-11-22
 license: CC-BY 4.0
 tags:
     - education
+    - khoury
 ---
 
 # To Khoury College
