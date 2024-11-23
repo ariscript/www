@@ -68,7 +68,11 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
         </section>
 
         <header>
-            <h1 class="name">{{ config.author.name }}</h1>
+            <h1>
+                <a class="name" href="https://{{ config.hostname }}">
+                    {{ config.author.name }}
+                </a>
+            </h1>
             <ul class="horiz-list">
                 <li>
                     <a href="{{ resume.contact.phone.href }}" rel="me">
@@ -81,7 +85,11 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                     </a>
                 </li>
                 <li>
-                    <a href="/" target="_blank" rel="noopener me">
+                    <a
+                        href="https://{{ config.hostname }}"
+                        target="_blank"
+                        rel="noopener me"
+                    >
                         {{ config.hostname }}
                     </a>
                 </li>
