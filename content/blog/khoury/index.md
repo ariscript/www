@@ -26,7 +26,10 @@ in the process of making these changes.
 
 The [How to Design Programs](https://htdp.org/2024-11-6/Book/index.html)
 curriculum teaches students how to think, and how to approach good software
-design, rather than teaching them to use the current tool du jour.
+design, rather than teaching them to use the current tool du jour. In the spirit
+of the Design Recipe, (as one of my friends put it), the most important thing
+that we need to preserve through these changes is "the purpose statement, not
+the implementation" of our current curriculum.
 
 This post will be updated as I cohere my thoughts further and have more to say,
 or as I get further information.
