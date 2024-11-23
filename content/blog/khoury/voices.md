@@ -2,7 +2,7 @@
 title: "Khoury Changes: Voices"
 description: A collection of thoughts on Khoury's upcoming course changes
 date: 2024-11-18
-updated: 2024-11-20
+updated: 2024-11-21
 tags:
     - education
     - khoury
