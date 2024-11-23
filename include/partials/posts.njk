@@ -12,7 +12,13 @@
                 {% set date = post.data.date | readableDate %}
                 <p>{{ post.data.description }}</p>
                 <p>
+                    Published
                     <time datetime="{{ date }}">{{ date }}</time>
+                    {% if post.data.updated %}
+                        {% set updated = post.data.updated | readableDate %}
+                        | Updated
+                        <time datetime="{{ updated }}">{{ updated }}</time>
+                    {% endif %}
                 </p>
             </div>
             <ul class="post-tags">
