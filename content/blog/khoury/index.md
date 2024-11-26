@@ -2,7 +2,7 @@
 title: To Khoury College
 description: Hear Us Out.
 date: 2024-11-18
-updated: 2024-11-23
+updated: 2024-11-26
 license: CC-BY 4.0
 tags:
     - education
@@ -138,7 +138,7 @@ functional programming. If it weren't for the design of the course, along with
 the specific assignments, I wouldn't have discovered my interest in the field of
 programming languages as early as I did (or ever). If I was allowed to skip the
 proposed CS0 because of my AP credit, and take CS1 purely in Python, I don't
-think I would be anywhere close to where I am now - both ih terms of programming
+think I would be anywhere close to where I am now - both in terms of programming
 ability and in terms of knowing what I want to do with my life.
 
 ### CS 2510 (Accelerated)
