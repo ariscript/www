@@ -58,7 +58,7 @@ these changes have the potential to undermine the value of a Khoury degree, even
 for students that have taken the current versions of these courses.
 
 I have my horses in this race and want Northeastern to remain a top-tier
-undergraduate school, particularly in the PL field.
+undergraduate school, particularly in the Programming Languages field.
 
 ## Designing Programmers
 
@@ -87,7 +87,7 @@ way they write and reason about their programs.
 Khoury's main mission is "CS for everyone". It is not "CS should be easy".
 
 Every course in Khoury should be very possible to pass given appropriate effort
-from the student, sufficent support from the course staff, and knowledge of
+from the student, sufficient support from the course staff, and knowledge of
 prerequisite topics as described by the course listing. This is very much true
 of the courses I've taken so far: CS 2500, 2510, 2800, and 3500. If the course
 offerings on satellite campuses don't sufficiently prepare students to take
@@ -110,10 +110,9 @@ mission.
 
 ## My Personal Experience
 
-> For a more concise summary of proposed changes, see
-> [Owen's Post](https://owen.duckham.dev/blog/curriculum-info) outlining the
-> currently available information. I'll be sprinkling in what I know along with
-> my thoughts on it.
+> For a more concise summary of (current public knowledge of) proposed changes,
+> see [Owen's Post](https://owen.duckham.dev/blog/curriculum-info) outlining
+> these details. I'll be sprinkling in what I know along with my thoughts on it.
 
 As stated before, I've taken many of the courses slated on the chopping block to
 be either fully eliminated or heavily modified. I also want to take some more of
@@ -132,8 +131,8 @@ standard sections of the course.
 I came into Northeastern with years of programming experience and felt like I
 was too good for even the accelerated section and should be placed in OOD at
 least. In hindsight, I think that having this opportunity would've been
-detrimental to my edication - and know some people who regret testing out of
-these classes as well. Importantly, taking fundies changed the way I think about
+detrimental to my education - and know some people who regret testing out of
+these classes as well. Importantly, this course changed the way I think about
 the code I write, and got me out of the habit of many bad patterns.
 
 Though not the primary purpose of the course, program design was approached from
@@ -154,7 +153,7 @@ toolbox. It's taught in Java for a somewhat similar reason as the proposal calls
 to teach earlier courses in Python, to use a relevant industrial language to get
 students prepared for co-ops - though there are still many guardrails around the
 mess of Java to keep students writing well-designed code (notably
-course-specific libaries like `funworld`).
+course-specific libraries like `funworld`).
 
 A lot of the course is focused on making good abstractions using `abstract`
 classes to share common functionality between several classes implementing an
@@ -192,7 +191,7 @@ features. Once again this course had some PL-y undertones and helped me learn
 about these topics further: Prof. Patterson connected me to Prof. Ahmed and the
 Rocq Reading Group that ran this semester.
 
-The course provided a gentle onramp into formal methods and verification topics
+The course provided a gentle on-ramp into formal methods and verification topics
 that students will otherwise never see in their coursework, and will never know
 if they like it and want to pursue this area further. Removing a course like
 this will significantly reduce the proportion of undergrads that end up doing
