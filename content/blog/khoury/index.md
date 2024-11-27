@@ -2,7 +2,7 @@
 title: To Khoury College
 description: Hear Us Out.
 date: 2024-11-18
-updated: 2024-11-26
+updated: 2024-11-27
 license: CC-BY 4.0
 tags:
     - education
@@ -36,6 +36,10 @@ or as I get further information.
 
 > This post was heavily edited on Nov. 23 as my understanding of the situation
 > has changed significantly.
+>
+> I also rewrote much of the later half of this article on Nov. 27 to
+> incorporate more information from Prof. Felleisen and added some polishing
+> touches.
 
 ## Who am I?
 
@@ -116,7 +120,7 @@ be either fully eliminated or heavily modified. I also want to take some more of
 these in future semesters. It's worth going into how I feel about each one
 individually.
 
-### CS 2500 (Accelerated)
+### Fundamentals I
 
 Let's start from the beginning.
 
@@ -141,21 +145,45 @@ proposed CS0 because of my AP credit, and take CS1 purely in Python, I don't
 think I would be anywhere close to where I am now - both in terms of programming
 ability and in terms of knowing what I want to do with my life.
 
-### CS 2510 (Accelerated)
+### Fundamentals II
 
 As the next course in the Fundamentals track, this course developed on much of
-the concepts taught in Fundamentals 1, with a specific focus on some basic
-object-oriented principles and transitioning towards imperative code. It
-consolidates a lot of disparate but important topics in computer science and
-presents them in a digestible way for students. This course lays important
-groundwork that students need to progress further towards Fundamentals 3 and 4.
+the concepts taught in Fundamentals I, with a specific focus on object-oriented
+design and bringing in static type checking as another tool in the students'
+toolbox. It's taught in Java for a somewhat similar reason as the proposal calls
+to teach earlier courses in Python, to use a relevant industrial language to get
+students prepared for co-ops - though there are still many guardrails around the
+mess of Java to keep students writing well-designed code (notably
+course-specific libaries like `funworld`).
 
-I also really enjoyed the course as taught by Prof. Lerner, and the assignments
-were very useful to develop my skills as a software developer. It's still my
-favorite class I've taken to date, but I also don't have too much to say about
-it.
+A lot of the course is focused on making good abstractions using `abstract`
+classes to share common functionality between several classes implementing an
+interface. This culminated a longer-term project to make two separate games with
+one codebase by sharing almost all the game logic with very small differences in
+each of the classes driving the two different games, encoding their specific
+rule sets.
 
-### CS 2800
+The course also later transitions to a more imperative programming style, which
+is more representative of industrial Java due to its poor support of true OO
+design, as outlined in books such as
+[Effective Java](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997)
+Concepts like imperative `while` and `for` loops must be introduced as an
+alternative to recursive code in a context where the language doesn't implement
+proper tail call optimization for deeply recursive functions.
+
+I also took the accelerated section of the course with Prof. Lerner this past
+spring. Our section went over concepts than this, and had a brief foray into
+data structures and algorithms. We worked on tree and graph-based algorithms
+such as Kruskal's and some dynamic programming problems - resulting in some cool
+projects like a maze generator and an image
+[Seam Carving](https://en.wikipedia.org/wiki/Seam_carving) app.
+
+Fundamentals II teaches OO design from first principles they learned in the
+previous semester, and builds to the way that these concepts are currently used
+in industry. Students leave this course well-prepared to take Fundamentals III:
+the gatekeeper of co-op.
+
+### Logic and Computation
 
 I took CS 2800 with Prof. Patterson, with his rework of the course, and it was
 really quite good. It was definitely on the easier side for someone coming
@@ -166,32 +194,36 @@ Rocq Reading Group that ran this semester.
 
 The course provided a gentle onramp into formal methods and verification topics
 that students will otherwise never see in their coursework, and will never know
-if they like it and want to pursue this area further. Mainly for these reasons,
-I believe that this course should not only continue to be offered, but also stay
-as a required CS course.
+if they like it and want to pursue this area further. Removing a course like
+this will significantly reduce the proportion of undergrads that end up doing
+research or wanting to do a PhD.
 
-### CS 3500[^2]
+### Object-Oriented Design | Fundamentals III[^2]
 
 I must admit this was my least favorite course on this list, but not for the
 usual reasons. Unlike the previous courses where I thought I knew everything but
 had my eyes opened, it was somewhat the opposite with this one: I expected that
 it would cover concepts I didn't know, but it was mostly going through the
-[Gang of Four's book](https://en.wikipedia.org/wiki/Design_Patterns), but in
-Java instead of in C++. I previously wrote a [post](/blog/gang-of-four) directly
-inspired by my experience taking this course and my thoughts on the book.
+[Gang of Four's book](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
+but in Java instead of in C++, and covering some MVC concepts. I previously
+wrote an [article](/blog/gang-of-four) directly inspired by my experience taking
+this course and my thoughts on the book (it definitely isn't my best-written
+article).
 
-I'm certainly not opposed to this course existing, but I don't think it was
-particularly _hard_, mainly just a lot of work - and I would be on board with
-reducing some of that work for students. The actual concepts that the course
-covers are complex, but students are very much prepared for this, having already
-taken Fundamentals 2.
+The course that I took was not particularly hard, just a lot of homework to do.
+There were a lot of things covered in it, but I felt I learned more overall in
+Fundamentals II than my section of OOD. I think there could be value in reducing
+the workload for students, and there certainly is value in increasing the
+educational value of the course (in the way that the course is offered by Profs.
+Lerner and Nunez as a "small Software Dev"). In either case, students will come
+into this course well-prepared if their Fundamentals I and II were as intended.
 
 > The below higher-level courses are in high risk of being eliminated or watered
 > down to compensate for the lower standards taught in the introductory
 > material. These are also classes that I haven't yet taken (and may not ever be
 > able to take), so use the appropriate amount of salt for this segment.
 
-### CS 4500
+### Software Development | Fundamentals IV
 
 I haven't taken Software Development yet, but it was definitely in my plans to
 do so, as long as it continues being offered (and I hope it does). I'm not
@@ -204,20 +236,35 @@ is critical to develop a student into a skilled and highly competent developer
 \- and it very much raises the value of a Khoury graduate over those of other
 schools.
 
-### CS 4410/6410
+### Compilers
 
-I also haven't taken Compilers, but am registered for it for next semester. I
-like the course as it's structured now, without reverting to the classic (but
-very old!) [Dragon Book](https://suif.stanford.edu/dragonbook/). The course
-teaches a modern approach to compilers and it would be best for me to take it in
-its current form to help me further my interest in programming languages and
-compilers, and potentially do research in the [PRL](https://prl.ccs.neu.edu).
+I haven't taken Compilers and wanted to take it this upcoming semester, but
+wasn't able to. I really like the course as it's structured now, without
+reverting to the old [Dragon Book](https://suif.stanford.edu/dragonbook/) as
+will likely be the case if the core curriculum changes per the current proposal
+(or my knowledge of it). The course teaches a modern approach to compilers will
+help further my interest in programming languages and compilers, and potentially
+do research in the [PRL](https://prl.ccs.neu.edu). Northeastern is very unique
+among universities to teach compilers in this specific way, and I believe that
+our CS program is all the better for offering it as-is.
 
 ## Other Testimonies
 
 I'm not the only one having these feelings about the course changes, and there
 are many others that want to share their own opinion; I'll link to them on
 [the Voices page](voices) and update it regularly.
+
+## Acknowledgements
+
+I want to thank Prof. Felleisen for his input, which heavily informed a lot of
+the things I wrote about. If you want to hear about the motivations behind the
+way the current curriculum is taught directly from the source, I would highly
+recommend reading his
+[Developing Developers](https://felleisen.org/matthias/Thoughts/Developing_Developers.html)
+article.
+
+I also want to thank my other sources, whom I did not name. You should know who
+you are.
 
 Please note that this article is licensed CC-BY 4.0 in the hopes that this
 allows further reach. I only ask that you credit anything from this article to
@@ -230,7 +277,8 @@ me, but you're free to use anything here.
     may happen.
 
 [^2]:
-    I took OOD this past summer. It was not the "Fundamentals 3" that it was
+    I took OOD this past summer. It was not the "Fundamentals III" that it was
     made out to be, and it probably would've been much more useful for me if I
     had taken it in the fall instead. From talking to Prof. Lerner recently
-    about OOD, there are definitely portions that my class did not cover.
+    about OOD, there are definitely portions that my class did not cover, so
+    your mileage may vary depending on who taught your course and when.
