@@ -135,6 +135,15 @@ dl.table {
     }
 }
 
+@media only screen and (prefers-color-scheme: dark) {
+    a[style*="--webicon-dark"]::after {
+        mask-image: none;
+        background-image: var(--webicon-dark);
+        background-color: var(--bg-color);
+        background-size: contain;
+    }
+}
+
 .katex-html {
     display: none;
 }

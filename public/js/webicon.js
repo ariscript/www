@@ -9,17 +9,18 @@ for (const extLink of document.querySelectorAll(
         const url = new URL(extLink.getAttribute("href"));
 
         if (url.hostname in DARK_OVERRIDE) {
-            setIcon(extLink, DARK_OVERRIDE[url.hostname]);
-            continue;
+            extLink.style.setProperty(
+                "--webicon-dark",
+                `url("${DARK_OVERRIDE[url.hostname]}")`,
+            );
         }
 
         const iconUrl = `https://webicon.ariscript.org/${encodeURIComponent(
             `${url.protocol}//${url.hostname}`,
         )}`;
-        fetch(iconUrl).then((r) => r.ok && setIcon(extLink, iconUrl));
+        fetch(iconUrl).then(
+            (r) =>
+                r.ok && extLink.style.setProperty("--webicon", `url("${url}")`),
+        );
     } catch {} // if the href is not valid, do nothing
-}
-
-function setIcon(el, url) {
-    el.style.setProperty("--webicon", `url("${url}")`);
 }
