@@ -11,10 +11,6 @@ const require = createRequire(import.meta.url);
 
 const config = require("../data/config.json");
 
-const darkReplacement = {
-    "github.com": "https://github.githubassets.com/favicons/favicon-dark.svg",
-};
-
 const md = new MarkdownIt({
     html: true,
     typographer: true,
@@ -46,18 +42,10 @@ const md = new MarkdownIt({
     .use(iter, "indieweb_icon", "link_open", (tokens, idx) => {
         try {
             const url = new URL(tokens[idx].attrGet("href"));
-            if (url.hostname === config.hostname) return;
-
-            let style = tokens[idx].attrGet("style") ?? "";
-            style += `--indieweb: url("https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(
-                `${url.protocol}//${url.hostname}`,
-            )}");`;
-
-            if (url.hostname in darkReplacement) {
-                style += `--indieweb-dark-override: url("${darkReplacement[url.hostname]}");`;
-            }
-
-            tokens[idx].attrPush(["style", style]);
+            tokens[idx].attrPush([
+                "data-external-link",
+                url.hostname != config.hostname,
+            ]);
         } catch {
             // do nothing if href is not a valid URL
         }

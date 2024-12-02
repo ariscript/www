@@ -66,8 +66,12 @@
             {% getBundle "css" %}
         </style>
 
-        {% if config.cssNakedDay %}
+        {% if config.jsFeatures.cssNakedDay %}
             <script type="module" src="/js/cssNakedDay.js"></script>
+        {% endif %}
+
+        {% if config.jsFeatures.webicon %}
+            <script type="module" src="/js/webicon.js"></script>
         {% endif %}
     </head>
     <body>

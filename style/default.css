@@ -115,22 +115,23 @@ dl.table {
 }
 
 @media only screen {
-    a[style*="--indieweb:"]::after {
+    a[data-external-link="true"]::after {
+        mask-image: url(/img/external.svg);
+        background-color: var(--link-color);
         content: "";
         display: inline-block;
         vertical-align: middle;
         width: 1rem;
         height: 1rem;
-        margin: 0.2rem;
+        margin: 0 0.2rem;
         border-radius: 3px;
-        background-size: contain;
-        background-image: var(--indieweb);
     }
-}
 
-@media only screen and (prefers-color-scheme: dark) {
-    a[style*="--indieweb:"]::after {
-        background-image: var(--indieweb-dark-override, var(--indieweb));
+    a[style*="--webicon:"]::after {
+        mask-image: none;
+        background-image: var(--webicon);
+        background-color: var(--bg-color);
+        background-size: contain;
     }
 }
 
