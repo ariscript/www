@@ -237,15 +237,17 @@ schools.
 
 ### Compilers
 
-I haven't taken Compilers and wanted to take it this upcoming semester, but
-wasn't able to. I really like the course as it's structured now, without
-reverting to the old [Dragon Book](https://suif.stanford.edu/dragonbook/) as
-will likely be the case if the core curriculum changes per the current proposal
-(or my knowledge of it). The course teaches a modern approach to compilers will
-help further my interest in programming languages and compilers, and potentially
-do research in the [PRL](https://prl.ccs.neu.edu). Northeastern is very unique
-among universities to teach compilers in this specific way, and I believe that
-our CS program is all the better for offering it as-is.
+I'm registered to take Compilers this upcoming semester with Prof. Lerner. Much
+like Software Development, this course is also a in some ways a culminiating
+course in the Fundamentals track, and in the words of Professor Lerner himself,
+"the final form" of the design topics introduced in the previous three
+Fundamentals track courses. The course teaches a modern approach to compiler
+design, using industrial languages created specifically for this purpose -
+giving students practical experience in compiler systems. Northeastern is very
+unqiue among universities to teach the course in this way, and I believe that
+our computer science program benefits from it greatly. It helps students get
+prepared both for industrial jobs in this area and for further education or
+research.
 
 ## Other Testimonies
 
