@@ -13,20 +13,22 @@
             <dd>
                 <ul>
                     {% for platform, profile in config.author.socials %}
-                    <li>
-                        <a rel="me noopener"
-                        target="_blank"
-                        href="{{ profile }}"
-                        >
-                        {{ platform }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </dd>
-        <dt>Other</dt>
-        <dd>
-            <ul>
+                        <li>
+                            <a 
+                                rel="me noopener"
+                                target="_blank"
+                                data-external-link="true"
+                                href="{{ profile }}"
+                            >
+                                {{ platform }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </dd>
+            <dt>Other</dt>
+            <dd>
+                <ul>
                     <li><a href="/resume">Resumé</a></li>
                     <li><a href="/list">List</a></li>
                     <li><a href="/licenses">Licenses</a></li>
