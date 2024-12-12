@@ -1,7 +1,8 @@
 ---
 title: Dear Gang of Four
-description: No, we have function pointers at home.
+description: No, we have functional programming at home.
 date: 2024-09-20
+updated: 2024-12-12
 tags:
     - tech
     - education
@@ -9,14 +10,14 @@ tags:
 
 # Dear Gang of Four
 
+> Message from the future: I wrote this article shortly after finishing one of
+> my courses, which was effectively just going over this book in lectures, with
+> minimal other content. Perhaps I took a bad offering of that course, but at
+> the time of writing I was definitely salty about the way the course was
+> taught.
+
 You wrote a book. It was a really good book - in 1994. Should it still be _the_
 book three decades later?
-
-> Note: I'm aware the book has its examples written in C++ and Smalltalk, but
-> both are langauges I don't know. I'll mainly be talking about these in the
-> context of Java, since that's what I was taught in class and am most familar
-> with - though the substance of my point carries throguh to any pure-OOP
-> language regardless.
 
 In 1994, Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides published
 a book titled
@@ -67,14 +68,14 @@ to monkey-patch this feature into a language that doesn't have them.
 
 ## What now?
 
-As much as I'd like to, I will not seriously suggest that everyone should
-rewrite their old code in Rust, or some other language.
+As funny as it is, I'm not going to say that we should rewrite things in Rust
+(or Haskell).
 
 What I will suggest though, is to try to untie your code from the hegemony of
-this book and its design patterns. They're useful tools to see what your code is
-doing, and many of these are common enough occurences that they ought to have
-names - but they shouldn't be the first, let alone only reason why your code is
-organized the way it is.
+this book and its "design patterns". They're useful tools to reason about what
+your code is doing, and many of these are common enough occurences that they
+ought to have names - but "the book says this" should not be a reason to
+architect your code in some way.
 
 There are even modern features in languages like Java and C++ that let you
 improve most of these boilerplate patterns to concise and declarative functional
