@@ -41,11 +41,16 @@ const md = new MarkdownIt({
     })
     .use(iter, "indieweb_icon", "link_open", (tokens, idx) => {
         try {
-            const url = new URL(tokens[idx].attrGet("href"));
-            tokens[idx].attrPush([
-                "data-external-link",
-                url.hostname != config.hostname,
-            ]);
+            const a = tokens[idx];
+            const url = new URL(a.attrGet("href"));
+
+            if (
+                /https?:/.test(url.protocol) &&
+                url.hostname != config.hostname
+            ) {
+                a.attrPush(["data-external-link", true]);
+                a.attrPush(["target", "_blank"]);
+            }
         } catch {
             // do nothing if href is not a valid URL
         }
