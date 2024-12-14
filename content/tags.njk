@@ -1,5 +1,5 @@
 ---
-layout: layout/base.njk
+layout: layout/article.njk
 pagination:
     data: collections
     size: 1
@@ -15,10 +15,7 @@ eleventyComputed:
 permalink: /tags/{{ tag | slugify }}/
 ---
 
-<article>
-    <h1>Tag: {{ tag }}</h1>
-    
-    {% set posts = collections[tag] %}
-    
-    {% include "partials/posts.njk" %}
-</article>
+<h1>Tag: {{ tag }}</h1>
+
+{% set posts = collections[tag] %}
+{% include "partials/posts.njk" %}
