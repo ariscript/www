@@ -46,5 +46,7 @@ employer and want to see the real deal, please contact me privately.
 
 For informal things, please reach out to me on one of my socials linked at the
 bottom of this page (and most other pages). If you must email me, email me at
-this domain: any address will do. If you have a different email for me, it
-should also work - and may be preferable.
+`ari` at this domain. For anything of even mild importance, I would recommend 
+encrypting your email using GPG, with my [key](/pgp.asc). If you have another
+email for me (perhaps at a different domain) that would be more relevant, please
+feel free to use it.
