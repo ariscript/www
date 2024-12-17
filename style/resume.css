@@ -7,7 +7,7 @@
 #banner {
     --caption-mix: black;
     --link-mix: white;
-    padding: 2rem;
+    padding: 1rem;
     border: 1px solid var(--caption-color);
     margin: 0.5rem;
     border-radius: 10px;
@@ -94,6 +94,25 @@ body {
     align-items: center;
 }
 
+main > section {
+    margin-bottom: 0.5rem;
+}
+
+@media only screen {
+    body {
+        padding-top: 0;
+    }
+
+    #banner {
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    main > section {
+        margin-bottom: 1.5rem;
+    }
+}
+
 header {
     text-align: center;
     margin-top: 0.25rem;
@@ -112,7 +131,7 @@ h1 {
 }
 
 .horiz-list {
-    list-style-type: "|";
+    list-style-type: "•";
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -133,14 +152,29 @@ h1 {
 }
 
 @media only print {
+    .horiz-list {
+        list-style-type: "|";
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #technical .horiz-list {
+        display: grid;
+        grid: auto-flow dense / 1fr 1fr 1fr;
+        padding-inline-start: 0.25rem;
+
+        & > li:first-of-type {
+            padding: 0 0.25rem;
+            list-style-type: inherit;
+        }
+    }
+}
+
+@media only print {
     a {
         color: black;
         text-decoration: none;
     }
-}
-
-main > section {
-    margin-bottom: 0.5rem;
 }
 
 h1 {
