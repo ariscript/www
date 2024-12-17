@@ -5,25 +5,32 @@
 }
 
 #banner {
+    --caption-mix: black;
+    --link-mix: white;
     padding: 2rem;
     border: 1px solid var(--caption-color);
     margin: 0.5rem;
     border-radius: 10px;
-    background-color: color-mix(in oklab, var(--caption-color) 90%, black 10%);
+    background-color: color-mix(
+        in oklab,
+        var(--caption-color) 90%,
+        var(--caption-mix) 10%
+    );
     color: var(--bg-color);
 
     & > p {
         margin-bottom: 0;
     }
+
+    & a {
+        color: color-mix(in oklab, var(--link-color) 80%, var(--link-mix) 20%);
+    }
 }
 
 @media only screen and (prefers-color-scheme: dark) {
     #banner {
-        background-color: color-mix(
-            in oklab,
-            var(--caption-color) 90%,
-            white 10%
-        );
+        --caption-mix: white;
+        --link-mix: black;
     }
 }
 
