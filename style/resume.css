@@ -1,14 +1,12 @@
 :root {
     font-family: Helvetica, Arial, sans-serif;
-    color: black;
-    font-size: 10.75pt;
+    font-size: 12pt;
 }
 
 #banner {
     --caption-mix: black;
     --link-mix: white;
     padding: 1rem;
-    border: 1px solid var(--caption-color);
     margin: 0.5rem;
     border-radius: 10px;
     background-color: color-mix(
@@ -35,6 +33,11 @@
 }
 
 @media only print {
+    :root {
+        color: black;
+        font-size: 10.75pt;
+    }
+
     #banner {
         display: none;
     }
@@ -157,7 +160,7 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     #technical .horiz-list {
         display: grid;
         grid: auto-flow dense / 1fr 1fr 1fr;
