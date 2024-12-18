@@ -2,7 +2,7 @@
 title: "Khoury Changes: Voices"
 description: A collection of thoughts on Khoury's upcoming course changes
 date: 2024-11-18
-updated: 2024-11-21
+updated: 2024-12-18
 tags:
     - education
     - khoury
@@ -50,3 +50,27 @@ individual posts:
 >
 > -- [Federico Cassano](https://federico.codes), Research scientist @ Cursor, TA
 > for compilers, Former NUCCDC Captain
+
+> In my experience working on interdisciplinary projects, having the key CS
+> knowledge to properly abstract my models, separate my code base, and use tools
+> like the command line and Linux was extremely helpful as my coworkers didn’t
+> have the same knowledge (either because they are from math/physics/engineering
+> backgrounds where programming is more of a “get it done” than something that
+> is reusable, or it’s something they never were exposed to). It helped me
+> greatly, not only as my research project shifted dramatically. Additionally,
+> lots of my work was so reusable I was able to use it across different research
+> projects and used it to gain more opportunities. I was able to work well with
+> physicists when I had no physics background because I was able to provide key
+> CS skills.
+>
+> One of the biggest takeaways I had from Fundies was the need for reusability
+> in code, and I have found that to be especially true in physics where similar
+> systems can be reused over and over to allow for rapid experimentation,
+> especially with limited resources.
+>
+> --
+> [Claire Schlesinger](https://sites.google.com/view/claire-schlesinger/home),
+> fourth-year student with concentration in AI and minor in Physics. She is
+> pursuing a PhD in machine learning for material science/condensed matter
+> physics, and has participated in research involving LLMs, Material Science,
+> and Robotics.
