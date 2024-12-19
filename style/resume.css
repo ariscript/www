@@ -8,7 +8,8 @@
     --link-mix: white;
     padding: 1rem;
     margin: 0.5rem;
-    border-radius: 10px;
+    margin-top: 0;
+    border-radius: 0;
     background-color: color-mix(
         in oklab,
         var(--caption-color) 90%,
@@ -36,6 +37,10 @@
     :root {
         color: black;
         font-size: 10.75pt;
+    }
+
+    body {
+        margin-bottom: 0px;
     }
 
     #banner {
@@ -97,18 +102,21 @@ body {
     align-items: center;
 }
 
+main {
+    margin-bottom: 0px;
+}
+
 main > section {
     margin-bottom: 0.5rem;
+}
+
+main > section:last-of-type {
+    margin-bottom: 0px;
 }
 
 @media only screen {
     body {
         padding-top: 0;
-    }
-
-    #banner {
-        margin-top: 0;
-        border-radius: 0;
     }
 
     main > section {
