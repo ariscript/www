@@ -1,17 +1,17 @@
-article > dl {
+main > dl {
     margin-block-start: 0px;
 
-    & > section {
+    & > dt {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top: 0.5rem;
+    }
+
+    & > dd {
         border-bottom: 1px solid;
-        padding-top: 1rem;
+    }
 
-        & :last-of-type {
-            border: none;
-        }
-
-        & > dt {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+    & > dd:last-of-type {
+        border: none;
     }
 }
