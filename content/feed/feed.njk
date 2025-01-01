@@ -13,7 +13,7 @@ permalink: /feed/feed.xml
     <author>
         <name>{{ config.author.name }}</name>
     </author>
-    {% for post in collections.posts | reverse %}
+    {% for post in collections.posts | reverse | feed | take(10) %}
         {% set absolutePostUrl = post.url | htmlBaseUrl(feed.url) %}
         <entry>
             <title>{{ post.data.title }}</title>

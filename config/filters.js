@@ -14,6 +14,10 @@ export default function filters(config) {
         (tags ?? []).filter((t) => !["posts", "og-image"].includes(t)),
     );
 
+    config.addFilter("feed", (posts) => posts.filter((p) => !p.data.hidden));
+
+    config.addFilter("take", (items, n) => items.slice(0, n));
+
     config.addFilter("readableDate", readableDate);
 
     config.addFilter("renderMd", (src) => markdown().render(src));
