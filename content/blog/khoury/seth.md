@@ -7,6 +7,7 @@ tags:
     - education
     - khoury
 license: N/A
+hidden: true
 ---
 
 > This article was written by Seth Margolin, not myself.
