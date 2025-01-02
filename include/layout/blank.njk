@@ -39,6 +39,19 @@
         />
         <meta name="og:locale" content="en_US" />
         <meta name="og:site_name" content="{{ config.author.name }}" />
+
+        <link
+            rel="alternate"
+            href="/feed/feed.xml"
+            type="application/atom+xml"
+            title="{{ feed.title }}"
+        />
+        <link
+            rel="alternate"
+            href="/feed/feed.json"
+            type="application/json"
+            title="{{ feed.title }}"
+        />
         
         {% getBundle "html", "head" %}
 
