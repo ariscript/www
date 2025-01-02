@@ -17,6 +17,7 @@
     "banner": false,
     "jsFeatures": {
         "cssNakedDay": true,
-        "webicon": true
+        "webicon": true,
+        "headerCopy": true
     }
 }

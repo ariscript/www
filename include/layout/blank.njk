@@ -60,6 +60,10 @@
         {% if config.jsFeatures.webicon %}
             <script type="module" src="/js/webicon.js"></script>
         {% endif %}
+
+        {% if config.jsFeatures.headerCopy %}
+            <script type="module" src="/js/headerCopy.js"></script>
+        {% endif %}
     </head>
     <body>
         {% if config.banner %}
