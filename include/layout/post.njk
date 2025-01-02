@@ -23,7 +23,9 @@ layout: layout/entry.njk
     </dd>
     {% if updated %}
         <dt>Updated</dt>
-        <time class="dt-updated" datetime="{{ updated }}">{{ updated | readableDate }}</time>
+        <dd>
+            <time class="dt-updated" datetime="{{ updated }}">{{ updated | readableDate }}</time>
+        </dd>
     {% endif %}
     <dt>Tags</dt>
     <dd>
