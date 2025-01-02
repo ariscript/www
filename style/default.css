@@ -110,10 +110,6 @@ dl.table {
     }
 }
 
-:is(h1, h2, h3, h4, h5, h6):not(:hover) > a.header-anchor {
-    display: none;
-}
-
 @media only screen {
     a[data-external-link="true"]::after {
         mask-image: url(/img/external.svg);

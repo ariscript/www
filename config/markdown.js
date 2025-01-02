@@ -17,11 +17,9 @@ const md = new MarkdownIt({
     linkify: true,
 })
     .use(anchor, {
-        permalink: anchor.permalink.ariaHidden({
-            placement: "after",
+        permalink: anchor.permalink.headerLink({
             class: "header-anchor",
-            symbol: "🔗",
-            ariaHidden: false,
+            tabIndex: 0,
         }),
         level: [1, 2, 3, 4],
     })
