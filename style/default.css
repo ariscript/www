@@ -34,6 +34,13 @@
     font-size: 18px;
     line-height: 1.25em;
     height: 100%;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (prefers-reduced-motion: false) {
+    :root {
+        scroll-behavior: unset;
+    }
 }
 
 body {
