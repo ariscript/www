@@ -5,6 +5,10 @@
             "GitHub": "https://github.com/ariscript",
             "Fediverse": "https://tech.lgbt/@ariscript",
             "Bluesky": "https://bsky.app/profile/ariscript.org"
+        },
+        "email": {
+            "href": "mailto:ari",
+            "display": "ari@here"
         }
     },
     "repoUrl": "https://github.com/ariscript/www",

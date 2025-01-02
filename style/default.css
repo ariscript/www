@@ -78,6 +78,10 @@ header {
         text-decoration: none;
         color: var(--name-color);
     }
+
+    & > .h-card {
+        display: none;
+    }
 }
 
 dl.table {
