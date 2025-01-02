@@ -8,8 +8,6 @@ tags:
     - meta
 ---
 
-# Building This Website
-
 It's the year 2024 and I want to make a website. The number of options in the
 cross-product of all the JS frameworks and CSS libraries are insane, and each of
 them comes with its own problems (mainly in the amount of required JS). I wanted

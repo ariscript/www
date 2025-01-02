@@ -4,7 +4,13 @@ title: Home
 description: My website, open it and see.
 ---
 
-{%- css %}{% include "style/index.css" %}{% endcss %}
+{%- css %}
+    {% include "style/index.css" %}
+{% endcss %}
+
+{%- html "head" %}
+    <link rel="alternate" type="text/mf2+html" href="/blog" />
+{% endhtml %}
 
 <h1>{{ config.author.name }}</h1>
 

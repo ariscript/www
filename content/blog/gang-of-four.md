@@ -9,8 +9,6 @@ tags:
 hidden: true
 ---
 
-# Dear Gang of Four
-
 I removed this article for the time being since I didn't really love the way
 this was written, and am replacing it with this page just to keep the URL alive.
 If you are interested in seeing what it once was, there exists a machine that

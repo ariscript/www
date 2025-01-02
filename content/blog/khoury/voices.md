@@ -8,8 +8,6 @@ tags:
     - khoury
 ---
 
-# Khoury Changes: Voices
-
 -   [To Khoury College](/blog/khoury) written by myself
 -   [An Opinion on Proposed CS Curriculum Changes](/blog/khoury/seth) by current
     F1a student Seth Margolin

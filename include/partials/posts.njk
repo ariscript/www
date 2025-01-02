@@ -5,24 +5,24 @@
 <ol class="posts-list">
     {% for post in posts | reverse %}
         {% if not post.data.hidden %}
-            <li>
-                <a href="{{ post.url }}" class="post-link">
+            <li class="h-entry">
+                <a href="{{ post.url }}" class="p-name u-url post-link">
                     {{ post.data.title }}
                 </a>
                 <div class="post-data">
                     {% set date = post.data.date | readableDate %}
-                    <p>{{ post.data.description }}</p>
+                    <p class="p-summary">{{ post.data.description }}</p>
                     <p>
                         Published
-                        <time datetime="{{ date }}">{{ date }}</time>
+                        <time class="dt-published" datetime="{{ date }}">{{ date }}</time>
                         {% if post.data.updated %}
                             {% set updated = post.data.updated | readableDate %}
                             | Updated
-                            <time datetime="{{ updated }}">{{ updated }}</time>
+                            <time class="dt-updated" datetime="{{ updated }}">{{ updated }}</time>
                         {% endif %}
                     </p>
                 </div>
-                <ul class="post-tags">
+                <ul class="p-category post-tags">
                     {% for tag in post.data.tags | filterTags %}
                         <li>
                             <a href="/tags/{{ tag }}" class="tag-link">{{ tag }}</a>

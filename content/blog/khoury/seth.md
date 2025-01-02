@@ -12,8 +12,6 @@ hidden: true
 
 > This article was written by Seth Margolin, not myself.
 
-# An Opinion on Proposed CS Curriculum Changes
-
 After hearing about the upcoming changes to the CS curriculum here at
 Northeastern, I feel obligated to write my opinion on them. As a first-semester
 freshman, what changes or doesn't have a major impact on my education, my path

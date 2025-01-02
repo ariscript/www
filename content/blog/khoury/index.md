@@ -9,8 +9,6 @@ tags:
     - khoury
 ---
 
-# To Khoury College
-
 I had another post lined up singing the praises of the Design Recipe, but first
 I must defend it in the hour of need.
 

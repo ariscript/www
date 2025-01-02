@@ -6,8 +6,6 @@ tags:
     - politics
 ---
 
-# What Comes Next?
-
 We lost.
 
 We tried, but we lost tremendously. I can't tell you not to be scared, because I

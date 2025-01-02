@@ -18,14 +18,16 @@ layout: layout/article.njk
 
 <dl class="table">
     <dt>Published</dt>
-    <dd>{{ date | readableDate }}</dd>
+    <dd>
+        <time class="dt-published" datetime="{{ date }}">{{ date | readableDate }}</time>
+    </dd>
     {% if updated %}
         <dt>Updated</dt>
-        <dd>{{ updated | readableDate }}</dd>
+        <time class="dt-updated" datetime="{{ updated }}">{{ updated | readableDate }}</time>
     {% endif %}
     <dt>Tags</dt>
     <dd>
-        <ul>
+        <ul class="p-category">
             {% for tag in tags | filterTags %}
                 <li>
                     <a href="/tags/{{ tag }}">{{ tag }}</a>
@@ -36,6 +38,9 @@ layout: layout/article.njk
     <dt>License</dt>
     <dd>{{ license }}</dd>
 </dl>
-<section>
+
+<h1 class="p-name title">{{ title }}</h1>
+
+<section class="e-content">
     {{ content | safe }}
 </section>

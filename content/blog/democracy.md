@@ -6,8 +6,6 @@ tags:
     - politics
 ---
 
-# On Democracy
-
 I should be writing a paper for my my classes right now, yet I'm here instead
 writing about the perilous future of the democracy of the United States (at
 least the imperfect form that it currently exists in).
