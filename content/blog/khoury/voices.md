@@ -2,7 +2,7 @@
 title: "Khoury Changes: Voices"
 description: A collection of thoughts on Khoury's upcoming course changes
 date: 2024-11-18
-updated: 2024-12-18
+updated: 2025-01-03
 tags:
     - education
     - khoury
@@ -19,6 +19,8 @@ tags:
     by current Khoury PhD student Daniel Melcer
 -   [Fundies Curriculum Changes](https://blog.wakefield.fyi/#fundies) by
     third-year Software Dev student Ben Wakefield
+-   [Northeastern’s redesign of the Khoury curriculum abandons the fundamentals of computer science](https://huntnewsnu.com/82511/editorial/op-eds/op-ed-northeasterns-redesign-of-the-khoury-curriculum-abandons-the-fundamentals-of-computer-science/)
+    Huntington News Op-ed written by two-time OOD TA Derek Kaplan
 
 This list will be updated as I recieve more articles from people. If you have
 thoughts that you want posted here, please reach out to me through either email
