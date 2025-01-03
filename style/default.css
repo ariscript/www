@@ -151,6 +151,30 @@ dl.table {
     }
 }
 
+a.header-anchor {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.header-anchor::before {
+    content: "🔗";
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.75rem;
+    width: 1rem;
+    margin-inline-start: -1rem;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+a.header-anchor:hover {
+    text-decoration: underline;
+}
+
+a.header-anchor:hover::before {
+    visibility: visible;
+}
+
 .katex-html {
     display: none;
 }
