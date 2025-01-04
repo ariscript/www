@@ -106,18 +106,3 @@ figure.c-blockquote > blockquote {
 figure.c-blockquote > figcaption::before {
     content: "—";
 }
-
-pre[class*="language-"] code,
-code {
-    font-family: var(--code-font);
-}
-
-code {
-    padding: 0.125rem;
-    background-color: color-mix(
-        in oklab,
-        var(--text-color),
-        var(--code-bg-mix) 85%
-    );
-    border-radius: 5px;
-}

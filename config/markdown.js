@@ -7,6 +7,7 @@ import katex from "@vscode/markdown-it-katex";
 import iter from "markdown-it-for-inline";
 
 import { createRequire } from "node:module";
+import Shiki from "@shikijs/markdown-it";
 const require = createRequire(import.meta.url);
 
 const config = require("../data/config.json");
@@ -37,6 +38,15 @@ const md = new MarkdownIt({
         dataType: true,
         figcaption: "alt",
     })
+    .use(
+        await Shiki({
+            langs: ["haskell", "rust", "typescript"],
+            themes: {
+                light: "one-light",
+                dark: "ayu-dark",
+            },
+        }),
+    )
     .use(iter, "indieweb_icon", "link_open", (tokens, idx) => {
         try {
             const a = tokens[idx];

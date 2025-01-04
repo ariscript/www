@@ -207,10 +207,29 @@ a.header-anchor:hover::before {
     font-size: 2rem;
 }
 
-pre[class*="language-"] {
-    border-radius: 1rem;
-}
-
 figure[data-type="image"] > figcaption {
     color: var(--caption-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    .shiki,
+    .shiki span {
+        color: var(--shiki-dark) !important;
+        background-color: var(--shiki-dark-bg) !important;
+    }
+}
+
+pre {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+code:not(.shiki code) {
+    padding: 0.125rem;
+    background-color: color-mix(
+        in oklab,
+        var(--text-color),
+        var(--code-bg-mix) 85%
+    );
+    border-radius: 5px;
 }
