@@ -125,21 +125,23 @@ dl.table {
     }
 }
 
-:is(ol, ul).grid-list {
+:is(ol, ul).flex-list {
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5rem 2rem;
     list-style-type: none;
-    align-items: end;
-    width: min-content;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    align-items: flex-end;
 }
 
 @media only screen and (max-width: 350px) {
-    :is(ol, ul).grid-list {
-        display: block;
+    :is(ol, ul).flex-list {
+        flex-direction: column;
         margin-inline-start: 1rem;
+        align-items: flex-start;
     }
 }
 

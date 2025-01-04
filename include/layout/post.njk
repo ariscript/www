@@ -29,7 +29,7 @@ layout: layout/entry.njk
     {% endif %}
     <dt>Tags</dt>
     <dd>
-        <ul class="p-category grid-list">
+        <ul class="p-category flex-list">
             {% for tag in tags | filterTags %}
                 <li>
                     <a href="/tags/{{ tag }}">{{ tag }}</a>
