@@ -94,7 +94,7 @@ header {
 dl.table {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    align-items: self-end;
+    align-items: center;
     gap: 0.5rem 1rem;
 
     & > :is(dt, dd) {
@@ -107,17 +107,39 @@ dl.table {
 
     & > dd {
         margin: 0;
+    }
+}
 
-        & > ul {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            width: max-content;
-            gap: 2rem;
-            list-style-type: none;
+@media only screen and (max-width: 500px) {
+    dl.table {
+        display: block;
+        align-self: flex-start;
+
+        & > :is(dt, dd) {
+            margin-bottom: 0.25rem;
         }
+    }
+
+    footer {
+        justify-content: flex-start;
+    }
+}
+
+:is(ol, ul).grid-list {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem 2rem;
+    list-style-type: none;
+    align-items: end;
+    width: min-content;
+}
+
+@media only screen and (max-width: 350px) {
+    :is(ol, ul).grid-list {
+        display: block;
+        margin-inline-start: 1rem;
     }
 }
 
