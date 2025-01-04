@@ -43,20 +43,21 @@ export default class Licenses {
         return `
             <h1>OSS Licenses</h1>
 
-            <p>
-                The <em>code</em> powering this website is
-                <a href="${config.repoUrl}">open source</a>
-                and licensed under
-                <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL 3.0 or later</a>.
-                <br />
-                The <em>content</em> on this website are licensed under
-                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>
-                unless otherwise mentioned on the page.
-                <br />
-                Refer to the repository README for a definition of what constitutes content.
-            </p>
+            ${this.renderMd(`
+            The _code_ powering this website is [open source](${config.repoUrl})
+            and licensed under
+            [AGPL 3.0 or later](https://gnu.org/licenses/agpl-3.0.html). The
+            _content_ on this website are licensed under
+            [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+            unless otherwise mentioned. Refer to the repository README for what
+            constitutes content.
 
-            <p>These are the open source libraries that were used to make this website:</p>
+            Additionally, the code powering the icons on external links is also
+            [open source](https://github.com/ariscript/webicon) and licensed under
+            AGPL 3.0 or later.
+
+            These are the open source libraries that were used to make this website:
+            `)}
 
             <dl>
             ${packageData
