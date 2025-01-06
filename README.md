@@ -11,6 +11,10 @@ Uses 11ty for site generation.
 
 -   Automatic Atom and JSON Feed generation
 -   Automatic Open Graph image generation ("twitter card")
+-   Automatic Sitemap generation
+    -   Caveat: single-file sitemap only supports 50,000 URLs. If you have too
+        many pages, this will break. A website of this nature should not reach
+        this amount in any reasonable timeframe.
 -   Tagging for blog posts
     -   Automatically generates page of articles using that tag
 
@@ -52,6 +56,7 @@ Content includes any files in the `content/` or `data/` directories, except:
 -   `content/tags.njk`
 -   `content/licenses.11ty.js`
 -   `content/og.11ty.js`
+-   `content/sitemap.njk`
 -   the keys of `data/config.json`
 -   the keys of `data/feed.json`
 
