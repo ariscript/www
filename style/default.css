@@ -186,7 +186,8 @@ a.header-anchor::before {
     vertical-align: middle;
     font-size: 0.75rem;
     width: 1rem;
-    margin-inline-start: -1rem;
+    margin-inline-start: -1.25rem;
+    padding-inline-end: 0.25rem;
     text-decoration: none;
     visibility: hidden;
 }
