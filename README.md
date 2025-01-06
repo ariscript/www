@@ -5,15 +5,40 @@ visit it [here](https://ariscript.org/).
 
 Uses 11ty for site generation.
 
+## Features
+
+### Static
+
+-   Automatic Atom and JSON Feed generation
+-   Automatic Open Graph image generation ("twitter card")
+-   Tagging for blog posts
+    -   Automatically generates page of articles using that tag
+
+### JavaScript Required
+
+These features currently ship a total of ~1.6KB of clientside JS, and each can
+be individually disabled.
+
+-   [CSS Naked Day](https://css-naked-day.github.io/)
+    ([script](public/js/cssNakedDay.js))
+    -   Removes all styles during the 50 hours of CSS Naked Day
+-   Insert favicons after external links ([script](public/js/webicon.js))
+    -   Made possible through [webicon](https://github.com/ariscript/webicon)
+    -   Fallback if no icon can be found
+    -   Caveat: only automatic for links written in Markdown
+-   Copy links to specific headings ([script](public/js/headerCopy.js))
+    -   Copies fragment link on click
+    -   Only for headers written in Markdown
+
 ## Contributing
 
 Feel free to send a pull request to add anything you want, as long as you obey
-the License. I'll probably merge it.
+the License. I might merge it.
 
-## A Note about Licensing
+## Licensing
 
-The website itself is licensed under [AGPL 3.0 or later](LICENSE), but the
-content on it is licensed under
+The code powering the website is licensed under [AGPL 3.0 or later](LICENSE),
+but the content on it is licensed under
 [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless
 otherwise stated. Any use of this content outside the scope of these licenses
 needs advance approval from myself.
@@ -36,8 +61,9 @@ Content also includes the following outside of the mentioned directories:
 
 This list may (and likely will) change to include some new files if necessary.
 
-## Credit
+## Acknowledgements
 
-A lot of this has been monkey-patched together from
-[Evan Boehs' website](https://github.com/boehs/site) (licensed AGPL) and
-[eleventy-base-blog](https://github.com/11ty/eleventy-base-blog) (licensed MIT).
+My website is heavily based off [Evan Boehs](https://boehs.org/)'s website
+([source](https://github.com/boehs/site)) and basically implements a subset of
+its features that I wanted to have, with a bent towards minimizing clientside
+JS. I also have to thank him for getting me into properly making my own website.
