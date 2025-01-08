@@ -4,22 +4,15 @@
 }
 
 :root {
-    --thead-color: #ccd0da; /* catppuccin surface 0 */
-    --tr-odd-color: #e6e9ef; /* catppuccin mantle */
-    --tr-even-color: #dce0e8; /* catppuccin crust */
-    --blockquote-left-color: #5c5f77; /* catppuccin subtext 1 */
+    --thead-color: light-dark(#ccd0da, #363a4f); /* catppuccin surface 0 */
+    --tr-odd-color: light-dark(#e6e9ef, #1e2030); /* catppuccin mantle */
+    --tr-even-color: light-dark(#dce0e8, #181926); /* catppuccin crust */
+    --blockquote-left-color: light-dark(
+        #5c5f77,
+        #b8c0e0
+    ); /* catppuccin subtext 1 */
     --code-font: JetBrainsMono, Menlo, Consolas, Courier, monospace;
-    --code-bg-mix: white;
-}
-
-@media only screen and (prefers-color-scheme: dark) {
-    :root {
-        --thead-color: #363a4f;
-        --tr-odd-color: #1e2030;
-        --tr-even-color: #181926;
-        --blockquote-left-color: #b8c0e0;
-        --code-bg-mix: black;
-    }
+    --code-bg-mix: light-dark(white, black);
 }
 
 @media only print {

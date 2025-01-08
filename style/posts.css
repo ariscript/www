@@ -1,11 +1,5 @@
 :root {
-    --subtext-color: #6c6f85; /* catppuccin subtext 0 */
-}
-
-@media only screen and (prefers-color-scheme: dark) {
-    :root {
-        --subtext-color: #a5adcb;
-    }
+    --subtext-color: light-dark(#6c6f85, #a5adcb); /* catppuccin subtext 0 */
 }
 
 h1 {
