@@ -18,35 +18,23 @@ description: Who is this person?
 
 I'm Ari Prakash (she/her), a second-year student at
 [Northeastern University](https://northeastern.edu), where I'm studying Computer
-Science and minoring in Mathematics.
+Science and minoring in Mathematics. I'm interested in many things, but mainly
+programming languages, type theory, and compilers. I'm also interested in
+cybersecurity and low-level programming.
 
-I'm interested in many things, but chiefly programming language theory,
-compilers, and low level development - I'm looking to pursue many of these
-topics through education. I'll probably be writing about what I learn in these
-areas over time.
-
-I believe that computing techonolgy can and should be used for more good than
-what we're currently seeing, especially in the AI space. We should aim for more
-responsible and equitable development of these systems, in a way that benefits
-all. Technology comes with huge potential to benefit humanity, but must be used
-with all of its impacts considered (which is unfortunately not all that common).
-
-I'm a firm believer in
-[Free Software](https://www.gnu.org/philosophy/free-sw.html), as users should
-ultimately have control over what code is being run on their computers, and the
-freedom to see how the programs they use work. I strive to make all my publicly
-available code free to use.
+I believe that technology should be used to benefit and empower people and
+communities equitably, which is not at all a guarantee with any technological
+progress. The systems that we create ought to make the world a better place
+rather than deliver value to a select few.
 
 I'm currently open to be hired for internships or co-ops! The public version of
-my resumé can be found right [on my website](/resume)! Remember that it's
-designed for PDF export and not to be looked at in a browser. If you're an
-employer and want to see the real deal, please contact me privately.
+my résumé can be found right [on my website](/resume)! If you're an employer and
+want the real deal, please reach out to me per the instructions below.
 
 ## Contact
 
-For informal things, please reach out to me on one of my socials linked at the
-bottom of this page (and most other pages). If you must email me, email me at
-`ari` at this domain. For anything of even mild importance, I would recommend
-encrypting your email using GPG, with my [key](/pgp.asc). If you have another
-email for me (perhaps at a different domain) that would be more relevant, please
-feel free to use it.
+For informal purposes, please reach out to me on one of my socials linked in the
+footer. If you must email me, please do so at `ari` at this domain. For anything
+important, I would recommend encrypting your email using PGP, with my
+[key](/pgp.asc). This key also works for my `.edu` email, so if that address is
+more relevant for your inquiry, feel free to use it (if you can find it).
