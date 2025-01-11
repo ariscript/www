@@ -59,6 +59,10 @@ a:visited {
     text-decoration: underline;
 }
 
+a:hover {
+    text-decoration-style: wavy;
+}
+
 header,
 footer {
     display: flex;
