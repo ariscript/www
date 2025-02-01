@@ -9,7 +9,8 @@
         "email": {
             "href": "mailto:ari",
             "display": "ari@here"
-        }
+        },
+        "fediTag": "@ari@types.pl"
     },
     "repoUrl": "https://github.com/ariscript/www",
     "hostname": "ariscript.org",

@@ -13,6 +13,7 @@ layout: layout/entry.njk
     {% for tag in tags | filterTags %}
         <meta name="article:tag" content="{{ tag }}" />
     {% endfor %}
+    <meta name="fediverse:creator" content="{{ config.author.fediTag }}">
 {% endhtml %}
 
 <dl class="table">
