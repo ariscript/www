@@ -26,10 +26,10 @@
         "@11ty/eleventy-plugin-bundle": "^2.0.2",
         "@11ty/eleventy-plugin-rss": "^1.2.0",
         "@resvg/resvg-js": "^2.6.2",
-        "@shikijs/markdown-it": "^1.26.1",
+        "@shikijs/markdown-it": "^1.29.2",
         "@types/license-checker": "^25.0.6",
-        "@types/node": "^20.17.6",
-        "@vscode/markdown-it-katex": "^1.1.0",
+        "@types/node": "^20.17.19",
+        "@vscode/markdown-it-katex": "^1.1.1",
         "license-checker": "^25.0.1",
         "markdown-it": "^14.1.0",
         "markdown-it-anchor": "^9.2.0",
@@ -38,7 +38,7 @@
         "markdown-it-footnote": "^4.0.0",
         "markdown-it-for-inline": "^2.0.1",
         "markdown-it-image-figures": "^2.1.1",
-        "prettier": "^3.3.3",
+        "prettier": "^3.5.2",
         "satori": "^0.10.14"
     }
 }
