@@ -8,6 +8,10 @@ import iter from "markdown-it-for-inline";
 
 import { createRequire } from "node:module";
 import Shiki from "@shikijs/markdown-it";
+import {
+    transformerNotationDiff,
+    transformerNotationHighlight,
+} from "@shikijs/transformers";
 const require = createRequire(import.meta.url);
 
 const config = require("../data/config.json");
@@ -45,6 +49,10 @@ const md = new MarkdownIt({
                 light: "catppuccin-latte",
                 dark: "catppuccin-mocha",
             },
+            transformers: [
+                transformerNotationHighlight(),
+                transformerNotationDiff(),
+            ],
         }),
     )
     .use(iter, "indieweb_icon", "link_open", (tokens, idx) => {
