@@ -40,10 +40,10 @@ const md = new MarkdownIt({
     })
     .use(
         await Shiki({
-            langs: ["haskell", "rust", "typescript"],
+            langs: ["haskell", "rust", "typescript", "racket"],
             themes: {
-                light: "one-light",
-                dark: "ayu-dark",
+                light: "catppuccin-latte",
+                dark: "catppuccin-mocha",
             },
         }),
     )

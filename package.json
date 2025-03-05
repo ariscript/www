@@ -25,6 +25,7 @@
         "@11ty/eleventy": "^3.0.0",
         "@11ty/eleventy-plugin-bundle": "^2.0.2",
         "@11ty/eleventy-plugin-rss": "^1.2.0",
+        "@catppuccin/vscode": "^3.16.1",
         "@resvg/resvg-js": "^2.6.2",
         "@shikijs/markdown-it": "^1.29.2",
         "@types/license-checker": "^25.0.6",
