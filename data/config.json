@@ -11,7 +11,7 @@
             "display": "ari@here"
         },
         "fediTag": "@ari@types.pl",
-        "hireable": true
+        "hireable": false
     },
     "repoUrl": "https://github.com/ariscript/www",
     "hostname": "ariscript.org",
