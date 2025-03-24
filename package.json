@@ -28,9 +28,9 @@
         "@catppuccin/vscode": "^3.16.1",
         "@resvg/resvg-js": "^2.6.2",
         "@shikijs/markdown-it": "^1.29.2",
-        "@shikijs/transformers": "^3.1.0",
+        "@shikijs/transformers": "^3.2.1",
         "@types/license-checker": "^25.0.6",
-        "@types/node": "^20.17.19",
+        "@types/node": "^20.17.25",
         "@vscode/markdown-it-katex": "^1.1.1",
         "license-checker": "^25.0.1",
         "markdown-it": "^14.1.0",
@@ -40,7 +40,7 @@
         "markdown-it-footnote": "^4.0.0",
         "markdown-it-for-inline": "^2.0.1",
         "markdown-it-image-figures": "^2.1.1",
-        "prettier": "^3.5.2",
+        "prettier": "^3.5.3",
         "satori": "^0.10.14"
     }
 }
