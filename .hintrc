@@ -1,0 +1,5 @@
+{
+    "extends": ["development"],
+    // progressive enhancement!
+    "browserslist": ["last 1 versions", "not dead"]
+}
