@@ -6,6 +6,17 @@
     --name-color: light-dark(#8839ef, #c6a0f6); /* catppuccin mauve */
     --caption-color: light-dark(#5c5f77, #b8c0e0); /* catppuccin subtext 1 */
     --text-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --trans-pink: #f5abb9;
+    --trans-blue: #5acffa;
+    --trans-gradient: linear-gradient(
+        to right,
+        var(--trans-blue),
+        var(--trans-pink),
+        white,
+        var(--trans-pink),
+        var(--trans-blue)
+    );
 }
 
 @media only print {
@@ -153,6 +164,10 @@ dl.table {
         border-radius: 3px;
     }
 
+    a.trans[data-external-link="true"]::after {
+        background-image: var(--trans-gradient);
+    }
+
     a[style*="--webicon:"]::after {
         mask-image: none;
         background-image: var(--webicon);
@@ -228,4 +243,13 @@ code:not(.shiki code) {
         var(--code-bg-mix) 85%
     );
     border-radius: 5px;
+}
+
+.trans {
+    background-clip: text;
+    background-origin: content-box;
+    /* despite the vendor prefix, it's Baseline somehow */
+    -webkit-text-fill-color: transparent;
+    outline: var(--text-color);
+    background-image: var(--trans-gradient);
 }
