@@ -168,7 +168,7 @@ dl.table {
         background-image: var(--trans-gradient);
     }
 
-    a[style*="--webicon:"]::after {
+    :is(a, a.trans)[style*="--webicon:"]::after {
         mask-image: none;
         background-image: var(--webicon);
         background-color: var(--bg-color);
