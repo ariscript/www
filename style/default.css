@@ -258,6 +258,9 @@ code:not(.shiki code) {
 
 @media only screen and (prefers-color-scheme: dark) {
     a.trans[data-external-link="true"]::after {
-        background-image: var(--webicon-dark, var(--trans-gradient));
+        background-image: var(
+            --webicon-dark,
+            var(--webicon, var(--trans-gradient))
+        );
     }
 }
