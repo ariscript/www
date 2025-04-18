@@ -164,12 +164,6 @@ dl.table {
         border-radius: 3px;
     }
 
-    /* HACK: `:where(.trans)` has 0 specificity, so this won't override the
-             real icon, but `.trans` will */
-    a:where(.trans)[data-external-link="true"]::after {
-        background-image: var(--trans-gradient);
-    }
-
     a[style*="--webicon:"]::after {
         mask-image: none;
         background-image: var(--webicon);
@@ -247,11 +241,19 @@ code:not(.shiki code) {
     border-radius: 5px;
 }
 
-.trans {
-    background-clip: text;
-    background-origin: content-box;
-    /* despite the vendor prefix, it's Baseline somehow */
-    -webkit-text-fill-color: transparent;
-    outline: var(--text-color);
-    background-image: var(--trans-gradient);
+@media only screen {
+    .trans {
+        background-clip: text;
+        background-origin: content-box;
+        /* despite the vendor prefix, it's Baseline somehow */
+        -webkit-text-fill-color: transparent;
+        outline: var(--text-color);
+        background-image: var(--trans-gradient);
+    }
+
+    /* HACK: `:where(.trans)` has 0 specificity, so this won't override the
+             real icon, but `.trans` will */
+    a:where(.trans)[data-external-link="true"]::after {
+        background-image: var(--trans-gradient);
+    }
 }
