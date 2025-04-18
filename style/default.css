@@ -164,6 +164,8 @@ dl.table {
         border-radius: 3px;
     }
 
+    /* HACK: `:where(.trans)` has 0 specificity, so this won't override the
+             real icon, but `.trans` will */
     a:where(.trans)[data-external-link="true"]::after {
         background-image: var(--trans-gradient);
     }
