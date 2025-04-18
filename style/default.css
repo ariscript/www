@@ -251,9 +251,13 @@ code:not(.shiki code) {
         background-image: var(--trans-gradient);
     }
 
-    /* HACK: `:where(.trans)` has 0 specificity, so this won't override the
-             real icon, but `.trans` will */
-    a:where(.trans)[data-external-link="true"]::after {
-        background-image: var(--trans-gradient);
+    a.trans[data-external-link="true"]::after {
+        background-image: var(--webicon, var(--trans-gradient));
+    }
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    a.trans[data-external-link="true"]::after {
+        background-image: var(--webicon-dark, var(--trans-gradient));
     }
 }
