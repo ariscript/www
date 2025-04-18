@@ -164,11 +164,11 @@ dl.table {
         border-radius: 3px;
     }
 
-    a.trans[data-external-link="true"]::after {
+    a:where(.trans)[data-external-link="true"]::after {
         background-image: var(--trans-gradient);
     }
 
-    :is(a, a.trans)[style*="--webicon:"]::after {
+    a[style*="--webicon:"]::after {
         mask-image: none;
         background-image: var(--webicon);
         background-color: var(--bg-color);
@@ -177,7 +177,7 @@ dl.table {
 }
 
 @media only screen and (prefers-color-scheme: dark) {
-    a[style*="--webicon-dark"]::after {
+    a[style*="--webicon-dark:"]::after {
         mask-image: none;
         background-image: var(--webicon-dark);
         background-color: var(--bg-color);
