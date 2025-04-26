@@ -4,17 +4,17 @@
         "socials": {
             "GitHub": "https://github.com/ariscript",
             "Fediverse": "https://types.pl/@ari",
-            "Bluesky": "https://bsky.app/profile/ariscript.org"
+            "Bluesky": "https://bsky.app/profile/ari.foo"
         },
         "email": {
-            "href": "mailto:ari",
-            "display": "ari@here"
+            "href": "mailto:me",
+            "display": "me@here"
         },
         "fediTag": "@ari@types.pl",
         "hireable": false
     },
     "repoUrl": "https://github.com/ariscript/www",
-    "hostname": "ariscript.org",
+    "hostname": "ari.foo",
     "ogAvatar": "https://avatars.githubusercontent.com/u/57048370?s=32&v=4",
     "banner": false,
     "jsFeatures": {

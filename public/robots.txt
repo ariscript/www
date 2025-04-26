@@ -23,4 +23,4 @@ Disallow: /
 
 # Yes, this is a hardcoded hostname. This is annoying to fix unless this gets
 # moved to be a templated file, which it doesn't otherwise need to be.
-Sitemap: https://ariscript.org/sitemap.xml
+Sitemap: https://ari.foo/sitemap.xml
