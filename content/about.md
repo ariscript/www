@@ -39,12 +39,8 @@ rather than deliver value to a select few.
 
 ## Contact
 
-For informal purposes, please reach out to me on one of my socials linked in the
-footer. If you must email me, please do so at `ari` at this domain. For anything
-important, I recommend encrypting your email using PGP, with my [key](/pgp.asc).
-This key also works for my `.edu` email, so if that address is more relevant for
-your inquiry, feel free to use it.
-
-I'm also very available on Discord. If you know my Discord account, feel free to
-shoot me a message there. I'm not going to put my username here, but you can get
-it from me through other means.
+- Discord: [`aero.naut`](https://discord.com/users/564930157371195437)
+- Email: `me` at this domain ([key](/pgp.asc))
+    - If you have my `.edu` email, the above key still works
+- Socials: see footer
+- Signal: ask me on another platform
