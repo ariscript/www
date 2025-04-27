@@ -6,23 +6,6 @@
     --name-color: light-dark(#8839ef, #c6a0f6); /* catppuccin mauve */
     --caption-color: light-dark(#5c5f77, #b8c0e0); /* catppuccin subtext 1 */
     --text-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-    /* credit https://gaydient.com for the hard stops */
-    --trans-pink: #f5a9b8;
-    --trans-blue: #5bcefa;
-    --trans-gradient: linear-gradient(
-        90deg,
-        var(--trans-blue) 0%,
-        var(--trans-blue) 20%,
-        var(--trans-pink) 20%,
-        var(--trans-pink) 40%,
-        white 40%,
-        white 60%,
-        var(--trans-pink) 60%,
-        var(--trans-pink) 80%,
-        var(--trans-blue) 80%,
-        var(--trans-blue) 100%
-    );
 }
 
 @media only print {
@@ -245,28 +228,4 @@ code:not(.shiki code) {
         var(--code-bg-mix) 85%
     );
     border-radius: 5px;
-}
-
-@media only screen {
-    .trans {
-        background-clip: text;
-        background-origin: content-box;
-        /* despite the vendor prefix, it's Baseline somehow */
-        -webkit-text-fill-color: transparent;
-        outline: var(--text-color);
-        background-image: var(--trans-gradient);
-    }
-
-    a.trans[data-external-link="true"]::after {
-        background-image: var(--webicon, var(--trans-gradient));
-    }
-}
-
-@media only screen and (prefers-color-scheme: dark) {
-    a.trans[data-external-link="true"]::after {
-        background-image: var(
-            --webicon-dark,
-            var(--webicon, var(--trans-gradient))
-        );
-    }
 }

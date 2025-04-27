@@ -1,0 +1,94 @@
+:root {
+    /* credit https://gaydient.com */
+    --trans-gradient: linear-gradient(
+        90deg,
+        #5bcefa 0%,
+        #5bcefa 20%,
+        #f5a9b8 20%,
+        #f5a9b8 40%,
+        #ffffff 40%,
+        #ffffff 60%,
+        #f5a9b8 60%,
+        #f5a9b8 80%,
+        #5bcefa 80%,
+        #5bcefa 100%
+    );
+
+    --nonbinary-gradient: linear-gradient(
+        90deg,
+        #fddb00 0%,
+        #fddb00 25%,
+        #ffffff 25%,
+        #ffffff 50%,
+        #9c5cd4 50%,
+        #9c5cd4 75%,
+        #000000 75%,
+        #000000 100%
+    );
+
+    --bi-gradient: linear-gradient(
+        90deg,
+        #ff0080 0%,
+        #ff0080 33%,
+        #8c4799 33%,
+        #8c4799 67%,
+        #0032a0 67%,
+        #0032a0 100%
+    );
+
+    --rainbow-gradient: linear-gradient(
+        90deg,
+        #e40303 0%,
+        #e40303 17%,
+        #ff8c00 17%,
+        #ff8c00 33%,
+        #ffed00 33%,
+        #ffed00 50%,
+        #008026 50%,
+        #008026 67%,
+        #24408e 67%,
+        #24408e 83%,
+        #732982 83%,
+        #732982 100%
+    );
+}
+
+@media only screen {
+    .pride,
+    .trans:not(.pride) {
+        background-clip: text;
+        background-origin: content-box;
+        /* despite the vendor prefix, it's Baseline somehow */
+        -webkit-text-fill-color: transparent;
+        outline: var(--text-color);
+    }
+
+    a.trans[data-external-link="true"]::after {
+        background-image: var(--webicon, var(--trans-gradient));
+    }
+
+    .trans {
+        background-image: var(--trans-gradient);
+    }
+
+    .nonbinary {
+        background-image: var(--nonbinary-gradient);
+    }
+
+    .bi {
+        background-image: var(--bi-gradient);
+    }
+
+    .rainbow {
+        background-image: var(--rainbow-gradient);
+    }
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    a.trans[data-external-link="true"]::after {
+        background-image: var(
+            --webicon-dark,
+            var(--webicon, var(--trans-gradient))
+        );
+    }
+}

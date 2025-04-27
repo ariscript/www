@@ -60,6 +60,7 @@
             {% if config.banner %}
                 {% include "style/banner.css" %}
             {% endif %}
+            {% include "style/pride.css" %}
         {% endcss %}
 
         <style>
@@ -76,6 +77,10 @@
 
         {% if config.jsFeatures.headerCopy %}
             <script type="module" src="/js/headerCopy.js"></script>
+        {% endif %}
+
+        {% if config.jsFeatures.pride %}
+            <script type="module" src="/js/pride.js"></script>
         {% endif %}
     </head>
     <body>

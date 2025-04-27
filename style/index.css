@@ -2,3 +2,12 @@ header {
     /* I am sorry for my sins */
     display: none !important;
 }
+
+#index-name {
+    width: fit-content;
+    height: max-content;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
