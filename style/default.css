@@ -7,15 +7,21 @@
     --caption-color: light-dark(#5c5f77, #b8c0e0); /* catppuccin subtext 1 */
     --text-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-    --trans-pink: #f5abb9;
-    --trans-blue: #5acffa;
+    /* credit https://gaydient.com for the hard stops */
+    --trans-pink: #f5a9b8;
+    --trans-blue: #5bcefa;
     --trans-gradient: linear-gradient(
-        to right,
-        var(--trans-blue),
-        var(--trans-pink),
-        white,
-        var(--trans-pink),
-        var(--trans-blue)
+        90deg,
+        var(--trans-blue) 0%,
+        var(--trans-blue) 20%,
+        var(--trans-pink) 20%,
+        var(--trans-pink) 40%,
+        white 40%,
+        white 60%,
+        var(--trans-pink) 60%,
+        var(--trans-pink) 80%,
+        var(--trans-blue) 80%,
+        var(--trans-blue) 100%
     );
 }
 
