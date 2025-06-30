@@ -40,7 +40,8 @@ rather than deliver value to a select few.
 ## Contact
 
 - Discord: [`aero.naut`](https://discord.com/users/564930157371195437)
+- Matrix: [`@ariscript:matrix.org`](https://matrix.to/#/@ariscript:matrix.org)
 - Email: `me` at this domain ([key](/pgp.asc))
-    - If you have my `.edu` email, the above key still works
+    - If you have my `northeastern.edu` email, the above key still works
 - Socials: see footer
 - Signal: ask me on another platform
