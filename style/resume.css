@@ -26,6 +26,10 @@
     }
 }
 
+.resume .experience:not(.resume-include) {
+    display: none;
+}
+
 @media only screen and (prefers-color-scheme: dark) {
     #banner {
         --caption-mix: white;
@@ -44,27 +48,6 @@
     }
 
     #banner {
-        display: none;
-    }
-
-    /*
-     * The numbers are defined "off by one" for some reason, this section shows
-     * only the first:
-     * - 4 work experiences
-     * - 2 education experiences
-     * - 3 project experiences
-     * in the print/PDF version, everything else is visible only on the web.
-     */
-
-    #work > section.experience:nth-of-type(n + 5) {
-        display: none;
-    }
-
-    #education > section.experience:nth-of-type(n + 3) {
-        display: none;
-    }
-
-    #projects > section.experience:nth-of-type(n + 4) {
         display: none;
     }
 }

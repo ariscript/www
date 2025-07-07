@@ -54,18 +54,17 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
         />
         <meta name="og:locale" content="en_US" />
         <meta name="og:site_name" content="{{ config.author.name }}" />
+
+        <script type="module" src="/js/resume.js"></script>
     </head>
     <body>
         <section id="banner">
             <p>
-                This is more like a CV than a résumé, with my contact info
-                removed. For additional details, please
-                <a href="/about#contact">get in touch with me</a>.
+                This page is my CV, with an option to restrict to only my résumé
+                if you check the box below. Otherwise, only my contact details
+                are removed from here (for scrapability reasons).
             </p>
-            <p>
-                Printing this page (or saving as PDF) will produce a one-page
-                résumé.
-            </p>
+            <input type="checkbox" id="resume-toggle" />
         </section>
 
         <header>
@@ -111,7 +110,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
         <main>
             <section id="education">
                 <h2>Education</h2>
-                <section class="experience">
+                <section class="experience resume-include">
                     <div class="head">
                         <div>
                             <h3><b>Northeastern University</b>, Boston, MA</h3>
@@ -160,7 +159,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         </div>
                     </div>
                 </section>
-                <section class="experience">
+                <section class="experience resume-include">
                     <div class="head">
                         <div>
                             <h3><b>Harvard Summer School</b>, Cambridge, MA</h3>
@@ -201,7 +200,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
             </section>
             <section id="work">
                 <h2>Experience</h2>
-                <section class="experience">
+                <section class="experience resume-include">
                     <div class="head">
                         <div>
                             <h3><b> Northeastern University</b>, Boston, MA</h3>
@@ -230,7 +229,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         </li>
                     </ul>
                 </section>
-                <section class="experience">
+                <section class="experience resume-include">
                     <div class="head">
                         <div>
                             <h3>
@@ -265,7 +264,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         </li>
                     </ul>
                 </section>
-                <section class="experience">
+                <section class="experience resume-include">
                     <div class="head">
                         <div>
                             <h3><b>Northeastern University</b>, Boston, MA</h3>
@@ -302,7 +301,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         </li>
                     </ul>
                 </section>
-                <section class="experience">
+                <section class="experience resume-include">
                     <div class="head">
                         <div>
                             <h3><b>Code In Place</b>, Remote</h3>
@@ -359,7 +358,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
             </section>
             <section id="technical">
                 <h2>Technical Knowledge</h2>
-                <dl class="experience">
+                <dl class="experience resume-include">
                     <dt><h3>Languages:</h3></dt>
                     <dd>
                         <ul class="horiz-list">
@@ -402,7 +401,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
             </section>
             <section id="projects">
                 <h2>Projects</h2>
-                <section class="experience">
+                <section class="experience resume-include">
                     <div class="head">
                         <h3>
                             <b
@@ -432,7 +431,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         </li>
                     </ul>
                 </section>
-                <section class="experience">
+                <section class="experience resume-include">
                     <div class="head">
                         <h3>
                             <b
@@ -459,7 +458,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         </li>
                     </ul>
                 </section>
-                <section class="experience">
+                <section class="experience resume-include">
                     <div class="head">
                         <h3>
                             <b>
