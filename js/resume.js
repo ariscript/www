@@ -1,5 +1,5 @@
 const toggle = document.getElementById("resume-toggle");
 
-toggle.addEventListener("click", () =>
-    document.body.classList.toggle("resume"),
+toggle.addEventListener("click", (e) =>
+    document.body.classList[e.target.checked ? "add" : "remove"]("resume"),
 );
