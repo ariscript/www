@@ -22,16 +22,16 @@
     },
     "homepage": "https://github.com/ariscript/www#readme",
     "devDependencies": {
-        "@11ty/eleventy": "^3.0.0",
+        "@11ty/eleventy": "^3.1.2",
         "@11ty/eleventy-plugin-bundle": "^2.0.2",
         "@11ty/eleventy-plugin-rss": "^1.2.0",
         "@catppuccin/vscode": "^3.17.0",
         "@resvg/resvg-js": "^2.6.2",
         "@shikijs/markdown-it": "^1.29.2",
-        "@shikijs/transformers": "^3.2.2",
+        "@shikijs/transformers": "^3.9.1",
         "@types/license-checker": "^25.0.6",
-        "@types/node": "^20.17.30",
-        "@vscode/markdown-it-katex": "^1.1.1",
+        "@types/node": "^20.19.9",
+        "@vscode/markdown-it-katex": "^1.1.2",
         "license-checker": "^25.0.1",
         "markdown-it": "^14.1.0",
         "markdown-it-anchor": "^9.2.0",
@@ -40,7 +40,7 @@
         "markdown-it-footnote": "^4.0.0",
         "markdown-it-for-inline": "^2.0.1",
         "markdown-it-image-figures": "^2.1.1",
-        "prettier": "^3.5.3",
+        "prettier": "^3.6.2",
         "satori": "^0.10.14"
     }
 }
