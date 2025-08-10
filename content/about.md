@@ -31,9 +31,9 @@ rather than deliver value to a select few.
 
 {% if config.author.hireable %}
 
-> I'm currently open for internships or co-ops! Please see my [résumé](/resume):
-> it's very slightly different from what I send to employers, so if you're
-> interested in seeing the real version, please reach out to me (see below).
+> I'm currently open for internships or co-ops! Please see my [CV](/cv): it's
+> very slightly different from what I send to employers, so if you're interested
+> in seeing the real version, please reach out to me (see below).
 
 {% endif %}
 

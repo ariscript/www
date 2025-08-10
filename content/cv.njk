@@ -1,6 +1,6 @@
 ---
-title: Résumé
-description: My (public) résumé.
+title: CV
+description: My (public) CV.
 ---
 
 <!doctype html>
@@ -21,7 +21,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/style/default.css" media="only screen" />
-        <link rel="stylesheet" href="/style/resume.css" />
+        <link rel="stylesheet" href="/style/cv.css" />
         <meta name="darkreader-lock" />
         <meta name="theme-color" content="#24273a" />
 
@@ -45,7 +45,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
         <meta name="twitter:card" content="summary_large_image" />
         <meta
             name="og:image"
-            content="https://{{ config.hostname }}/img/og/resume.png"
+            content="https://{{ config.hostname }}/img/og/cv.png"
         />
 
         <meta
@@ -80,13 +80,13 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
             </h1>
             <ul class="horiz-list">
                 <li>
-                    <a href="{{ resume.contact.phone.href }}" rel="me">
-                        {{ resume.contact.phone.display or 'Phone Number' }}
+                    <a href="{{ cv.contact.phone.href }}" rel="me">
+                        {{ cv.contact.phone.display or 'Phone Number' }}
                     </a>
                 </li>
                 <li>
-                    <a href="{{ resume.contact.email.href }}" rel="me">
-                        {{ resume.contact.email.display or 'Email address' }}
+                    <a href="{{ cv.contact.email.href }}" rel="me">
+                        {{ cv.contact.email.display or 'Email address' }}
                     </a>
                 </li>
                 <li>
@@ -103,11 +103,11 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                 <li>Boston, MA</li>
                 <li>
                     <a
-                        href="{{ resume.contact.linkedin.href }}"
+                        href="{{ cv.contact.linkedin.href }}"
                         target="_blank"
                         rel="noopener me"
                     >
-                        {{ resume.contact.linkedin.display or 'LinkedIn Profile' }}
+                        {{ cv.contact.linkedin.display or 'LinkedIn Profile' }}
                     </a>
                 </li>
             </ul>
