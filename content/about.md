@@ -17,7 +17,7 @@ description: Who is this person?
 # About
 
 I'm Ari Prakash
-(<a class="trans" href="https://en.pronouns.page/@ariscript" data-external-link="true" target="_blank"><span class="trans">she/her</span></a>),
+(<a href="https://en.pronouns.page/@ariscript" data-external-link="true" target="_blank"><span class="pride trans">she/her</span></a>),
 a second-year student at [Northeastern University](https://northeastern.edu),
 where I'm studying Computer Science and minoring in Mathematics. I'm interested
 in using the language of mathematics and logic to reason about programs, and to
