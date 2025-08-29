@@ -16,13 +16,14 @@ description: Who is this person?
 
 # About
 
-I'm Ari Prakash
-(<a href="https://en.pronouns.page/@ariscript" data-external-link="true" target="_blank"><span class="pride trans">she/her</span></a>),
-a second-year student at [Northeastern University](https://northeastern.edu),
-where I'm studying Computer Science and minoring in Mathematics. I'm interested
-in using the language of mathematics and logic to reason about programs, and to
-this end, learning about compilers and programming language theory. I'm also
-interested in cybersecurity and low-level systems programming.
+I'm Ari Prakash (ஆரி பிரகாஷ்)
+(<a href="https://en.pronouns.page/@ariscript" data-external-link="true" target="_blank"><span class="pride trans">she/her</span></a>,
+அவள்), a second-year student at
+[Northeastern University](https://northeastern.edu), where I'm studying Computer
+Science and minoring in Mathematics. I'm interested in using the language of
+mathematics and logic to reason about programs, and to this end, learning about
+compilers and programming language theory. I'm also interested in cybersecurity
+and low-level systems programming.
 
 I believe that technology should be used to benefit and empower people and
 communities equitably, which is not at all a guarantee with any technological
