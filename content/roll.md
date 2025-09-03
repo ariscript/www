@@ -19,7 +19,7 @@ primarily done by one person.
 - [maia](https://maia.crimew.gay/)
 - [Evan Boehs](https://boehs.org/)
 - [Julia Evans](https://jvns.ca/)
-- [Xe Isao](https://xeisao.net/)
+- [Xe Iaso](https://xeiaso.net/)
 - [Molly White](https://citationneeded.news/)
 - [Soatok](https://soatok.blog/)
 - [Eevee](https://eev.ee/)
