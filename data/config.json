@@ -2,15 +2,23 @@
     "author": {
         "name": "Ari Prakash",
         "socials": {
-            "GitHub": "https://github.com/ariscript",
-            "Fediverse": "https://types.pl/@ari",
-            "Bluesky": "https://bsky.app/profile/ari.foo"
+            "GitHub": {
+                "url": "https://github.com/ariscript",
+                "username": "ariscript"
+            },
+            "Fediverse": {
+                "url": "https://types.pl/@ari",
+                "username": "@ari@types.pl"
+            },
+            "Bluesky": {
+                "url": "https://bsky.app/profile/ari.foo",
+                "username": "@ari.foo"
+            }
         },
         "email": {
             "href": "mailto:me",
             "display": "me@here"
         },
-        "fediTag": "@ari@types.pl",
         "hireable": false
     },
     "repoUrl": "https://github.com/ariscript/www",
