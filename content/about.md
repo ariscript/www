@@ -1,7 +1,7 @@
 ---
 layout: layout/entry.njk
 title: About
-description: Who is this person?
+description: Who am I?
 ---
 
 {%- html "head" %}
@@ -18,23 +18,19 @@ description: Who is this person?
 
 I'm Ari Prakash (ஆரி பிரகாஷ்)
 (<a href="https://en.pronouns.page/@ariscript" data-external-link="true" target="_blank"><span class="pride trans">she/her</span></a>,
-அவள்), a second-year student at
+அவள்), a third-year student at
 [Northeastern University](https://northeastern.edu), where I'm studying Computer
-Science and minoring in Mathematics. I'm interested in using the language of
-mathematics and logic to reason about programs, and to this end, learning about
-compilers and programming language theory. I'm also interested in cybersecurity
-and low-level systems programming.
+Science and minoring in Mathematics.
 
-I believe that technology should be used to benefit and empower people and
-communities equitably, which is not at all a guarantee with any technological
-progress. The systems that we create ought to make the world a better place
-rather than deliver value to a select few.
+I'm interested in making it easier for developers to write safe and correct
+software, with the hope that such software can make it easier to empower
+marginalized people.
 
 {% if config.author.hireable %}
 
-> I'm currently open for internships or co-ops! Please see my [CV](/cv): it's
-> very slightly different from what I send to employers, so if you're interested
-> in seeing the real version, please reach out to me (see below).
+> I'm currently looking for an internship/co-op (academia or industry) for the
+> upcoming summer and/or fall! If you're interested in working with someone like
+> me, please reach out through the contact methods below!
 
 {% endif %}
 

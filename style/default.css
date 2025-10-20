@@ -199,8 +199,10 @@ a.header-anchor:hover::before {
     display: none;
 }
 
-.big {
+.flag {
     font-size: 2rem;
+    text-align: center;
+    margin: 0;
 }
 
 figure[data-type="image"] > figcaption {

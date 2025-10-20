@@ -141,6 +141,13 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         <div class="coursework">
                             <div>Coursework:</div>
                             <p>
+                                <a href="https://course.ccs.neu.edu/cs4410sp25"
+                                    >Compilers</a
+                                >
+                                (grad),
+                                <a href="https://mballantyne.net/hyol">
+                                    DSL Design</a
+                                >,
                                 <a
                                     href="https://sholtzen.dev/fall25-categories"
                                 >
@@ -153,13 +160,6 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                                     Logical Relations Seminar</a
                                 >
                                 (PhD, audit),
-                                <a href="https://course.ccs.neu.edu/cs4410sp25"
-                                    >Compilers</a
-                                >
-                                (grad),
-                                <a href="https://mballantyne.net/hyol">
-                                    DSL Design</a
-                                >,
                                 <a
                                     href="https://web.archive.org/web/20250226192646/https://ccs.neu.edu/~vip/teach/Algorithms/html/"
                                     >Algorithms</a
@@ -170,7 +170,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         </div>
                     </div>
                 </section>
-                <section class="experience resume-include">
+                <section class="experience">
                     <div class="head">
                         <div>
                             <h3><b>Harvard Summer School</b>, Cambridge, MA</h3>
@@ -228,8 +228,9 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         <li>
                             Implement verified compiler targeting
                             <a href="https://webassembly.org/">WebAssembly</a>
-                            in Rocq, ensuring safe shared-memory
-                            interoperability
+                            in
+                            <a href="https://rocq-prover.org/">Rocq,</a>
+                            ensuring safe shared-memory interoperability
                         </li>
                         <li>
                             Develop type-preserving compilers from high-level
@@ -255,7 +256,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                                 and Implementation
                             </p>
                         </div>
-                        <div class="timeframe">May 2025 &ndash; Present</div>
+                        <div class="timeframe">May &ndash; Aug 2025</div>
                     </div>
                     <ul class="work-description">
                         <li>
@@ -264,49 +265,14 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                             programming
                         </li>
                         <li>
-                            Design new features in the Pyret language to meet
-                            course requirements, allowing for networked
-                            interaction
+                            Design autograding system for
+                            <a href="https://pyret.org/">Pyret</a> using a
+                            dependency-based system, prioritizing actionable
+                            feedback
                         </li>
                         <li>
-                            Implement beginner-friendly autograding
-                            infrastructure for the largest university deployment
-                            of Pyret
-                        </li>
-                    </ul>
-                </section>
-                <section class="experience resume-include">
-                    <div class="head">
-                        <div>
-                            <h3>
-                                <b
-                                    ><a href="https://nuccdc.club"
-                                        >Northeastern University CCDC</a
-                                    ></b
-                                >, Boston, MA
-                            </h3>
-                            <p><b>CCDC Team Member</b></p>
-                        </div>
-                        <div class="timeframe">
-                            <p>Oct 2024 &ndash; Present</p>
-                        </div>
-                    </div>
-                    <ul class="work-description">
-                        <li>
-                            Member of Collegiate Cyber Defense Competition team,
-                            securing internal networks against attacks
-                        </li>
-                        <li>
-                            First place at
-                            <a
-                                href="https://ncaecybergames.org/results/2025/teams/3cf80d78-766d-4777-a366-69e4227ea520#"
-                                >NCAE Northeast 1</a
-                            >, and competed in Invitationals: worked on securing
-                            databases and SSH
-                        </li>
-                        <li>
-                            Experience in communicating details about security
-                            practices and vulnerabilities to a general audience
+                            Worked with faculty and gave input to inform design
+                            of course assignments, labs, and policies
                         </li>
                     </ul>
                 </section>
@@ -347,7 +313,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         </li>
                     </ul>
                 </section>
-                <section class="experience">
+                <section class="experience resume-include">
                     <div class="head">
                         <div>
                             <h3><b>Code In Place</b>, Remote</h3>
@@ -366,10 +332,6 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                         <li>
                             Reviewed weekly lecture material in highly
                             interactive section meetings with ~20 students
-                        </li>
-                        <li>
-                            Provided resources to students that wanted to pursue
-                            further education in Computer Science
                         </li>
                     </ul>
                 </section>
@@ -409,7 +371,7 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                     <dd>
                         <ul class="horiz-list">
                             <li>Rust</li>
-                            <li><a href="https://rocq-prover.org/">Rocq</a></li>
+                            <li>Rocq</li>
                             <li>OCaml</li>
                             <li>
                                 <a href="https://racket-lang.org/">Racket</a>
@@ -467,13 +429,16 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                             <a href="https://dl.acm.org/doi/pdf/10.1145/3704849"
                                 >finite-choice</a
                             >
-                            logic programming language within Racket's macro
-                            system, as a class project
+                            logic programming language as a hosted DSL, as a
+                            course project
                         </li>
                         <li>
-                            Includes support for arbitrary function relations,
-                            and user-defined extensions on top of our surface
-                            syntax
+                            Includes enhanced capabilities to interoperate with
+                            external Racket functions and data
+                        </li>
+                        <li>
+                            Allows for user-extensibility of the language syntax
+                            by hooking into Racket's powerful macro system
                         </li>
                     </ul>
                 </section>
@@ -489,18 +454,23 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                                 ></b
                             >
                         </h3>
-                        <div class="timeframe">Apr 2025</div>
+                        <div class="timeframe">Jan &ndash; Apr 2025</div>
                     </div>
                     <ul class="work-description">
                         <li>
-                            As a final project, extended our functional language
-                            compiler with pedagogical testing similar to
-                            <a href="https://pyret.org/"> Pyret </a>
+                            Implemented a compiler for an untyped
+                            expression-based language in OCaml as a course
+                            project
                         </li>
                         <li>
-                            Supports testing with multiple notions of equality,
-                            predicates, and user-friendly error messages on
-                            failure
+                            Inspired by Pyret, includes student-friendly testing
+                            features–supporting different equalities and
+                            predicates
+                        </li>
+                        <li>
+                            Implemented control flow with ANF, arbitrary tail
+                            calls, garbage collection, and interoperability with
+                            C
                         </li>
                     </ul>
                 </section>
@@ -521,13 +491,17 @@ This file is **not** licensed under CC BY-NC-SA 4.0, as is default for my Conten
                     </div>
                     <ul class="work-description">
                         <li>
-                            Published Rust library to remotely query Minecraft
-                            servers, securely run commands, with 7k+ downloads
+                            Published Rust library with 9k+ downloads to
+                            facilitate asynchronous interaction with Minecraft
+                            servers
                         </li>
                         <li>
                             Implemented low-level TCP and UDP protocol
-                            specifications, and incorporated feature requests
-                            from users
+                            specifications, and incorporated user requests
+                        </li>
+                        <li>
+                            Design a convenient and stable API for users to
+                            query server status and securely run commands
                         </li>
                     </ul>
                 </section>

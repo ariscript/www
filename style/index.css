@@ -1,13 +1,52 @@
-header {
+header:not(.index-header) {
     /* I am sorry for my sins */
     display: none !important;
+}
+
+.index-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+    & #headshot {
+        display: block;
+        border-radius: 50%;
+    }
+
+    & figcaption {
+        font-size: 0.75rem;
+        color: var(--caption-color);
+    }
 }
 
 #index-name {
     width: fit-content;
     height: max-content;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     padding-top: 0.5rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1;
+}
+
+#pronouns {
+    padding-top: 0;
+    padding-bottom: 0.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--caption-color);
+}
+
+#welcome {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
 }
