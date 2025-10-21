@@ -36,7 +36,7 @@ My research interests lie in the intersection of programming languages and
 human-computer interaction: I want to design tools to make it easier for
 developers to formally reason about their code and build safer systems.
 
-## News
+<h2>News</h2>
 
 - **October 2025:** I presented our work on miniDusa at Scheme 2025 at
   ICFP/SPLASH
@@ -45,7 +45,7 @@ developers to formally reason about their code and build safer systems.
 - **March 2025:** I have been accepted as a research assistant under
   [Prof. Amal Ahmed](https://ccs.neu.edu/~amal)!
 
-## Teaching
+<h2>Teaching</h2>
 
 - **Summer 1 2025:** Course assistant developing materials for
   [CS 2000](https://neu-pdi.github.io/cs2000-public-resources) (Intro to Program
