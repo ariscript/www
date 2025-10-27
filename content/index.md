@@ -42,8 +42,15 @@ developers to formally reason about their code and build safer systems.
   ICFP/SPLASH
 - **October 2025:** Zachary Eisbach and I presented our work on miniDusa at
   RacketCon!
+- **June 2025:** I attended
+  [OPLSS 2025](https://www.cs.uoregon.edu/research/summerschool/summer25/index.php)
 - **March 2025:** I have been accepted as a research assistant under
   [Prof. Amal Ahmed](https://ccs.neu.edu/~amal)!
+
+<h2>Speaking</h2>
+
+- **miniDusa: an Extensible Finite-Choice Programming Language:**
+  [RacketCon 2025](https://youtu.be/9HNrYJLeJ5k), Scheme 2025
 
 <h2>Teaching</h2>
 
