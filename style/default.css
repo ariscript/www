@@ -22,7 +22,7 @@
 
 :root {
     font-family: var(--text-font);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.25em;
     height: 100%;
     scroll-behavior: smooth;
