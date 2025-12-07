@@ -1,0 +1,20 @@
+<dl id="pubs-container">
+    {% for pub in pubs %}
+        <dt>{{ pub.title }} &ndash; {{ pub.date | monthYear }}</dt>
+        <dd>
+            <ol class="comma-list authors">
+                {% for author in pub.authors %}<li {% if author == config.author.name %}class="author-me"{% endif %}>
+                    {{ author }}
+                </li>{% endfor %}
+            </ol>
+            <div class="pub-extra">
+                <span>{{ pub.venue }}</span>
+                <ul class="comma-list artifacts">
+                    {% for name, loc in pub.artifacts %}<li>
+                        <a href="{{ loc }}" target="_blank">{{ name }}</a>
+                    </li>{% endfor %}
+                </ul>
+            </div>
+        </dd>
+    {% endfor %}
+</dl>

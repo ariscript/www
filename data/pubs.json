@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Specifying ABIs with Realizability and Type-Preserving Compilation",
+        "venue": "PriSC 2026",
+        "submitted": "2025-11-02",
+        "date": "2026-01-11",
+        "authors": [
+            "Brianna Marshall",
+            "Ryan Doenges",
+            "Owen Duckham",
+            "Ari Prakash",
+            "Elan Semenova",
+            "Maxime Legoupil",
+            "Lars Birkedal",
+            "Amal Ahmed"
+        ],
+        "artifacts": {
+            "PDF": "/pubs/richwasm-prisc26.pdf"
+        }
+    }
+]

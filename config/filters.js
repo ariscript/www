@@ -20,5 +20,24 @@ export default function filters(config) {
 
     config.addFilter("readableDate", readableDate);
 
+    config.addFilter("monthYear", (src) => {
+        const months = [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+        ];
+        const date = new Date(src);
+        return `${months[date.getMonth()]} ${date.getFullYear()}`;
+    });
+
     config.addFilter("renderMd", (src) => markdown().render(src));
 }

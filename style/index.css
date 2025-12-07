@@ -50,3 +50,50 @@ figure {
     margin-top: 0.25rem;
     margin-bottom: 0;
 }
+
+#pubs-container {
+    & dt {
+        font-size: 1.125rem;
+        font-weight: bold;
+    }
+
+    & dd {
+        margin-inline-start: 0;
+    }
+
+    & .comma-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-inline-start: 0;
+    }
+
+    & .comma-list > li {
+        width: fit-content;
+    }
+
+    & .comma-list > li:not(:last-of-type)::after {
+        content: ",";
+        padding-inline-end: 0.25rem;
+    }
+
+    & .pub-extra {
+        display: flex;
+        flex-direction: row;
+        gap: 0.25rem;
+        color: var(--caption-color);
+    }
+
+    & .artifacts::before {
+        content: "(";
+    }
+
+    & .artifacts::after {
+        content: ")";
+    }
+
+    & .authors > .author-me {
+        font-style: italic;
+    }
+}

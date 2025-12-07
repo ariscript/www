@@ -38,6 +38,9 @@ developers to formally reason about their code and build safer systems.
 
 <h2>News</h2>
 
+- **January 2026:** I will be TAing for CS 4400 (Programming Languages) this
+  spring
+- **December 2025:** Our PriSC workshop submission on RichWasm 2 was accepted!
 - **October 2025:** I presented our work on miniDusa at Scheme 2025 at
   ICFP/SPLASH
 - **October 2025:** Zachary Eisbach and I presented our work on miniDusa at
@@ -47,6 +50,10 @@ developers to formally reason about their code and build safer systems.
 - **March 2025:** I have been accepted as a research assistant under
   [Prof. Amal Ahmed](https://ccs.neu.edu/~amal)!
 
+<h2>Publications</h2>
+
+{%include "partials/pubs.njk" %}
+
 <h2>Speaking</h2>
 
 - **miniDusa: an Extensible Finite-Choice Programming Language:**
@@ -54,6 +61,9 @@ developers to formally reason about their code and build safer systems.
 
 <h2>Teaching</h2>
 
+- **Spring 2026:** TA for CS 4400/5400
+  [Programming Languages](https://pages.github.khoury.northeastern.edu/sholtzen/cs4400-spr25/)
+  with [Prof. Steven Holtzen](https://ccs.neu.edu/~sholtzen)
 - **Summer 1 2025:** Course assistant developing materials for
   [CS 2000](https://neu-pdi.github.io/cs2000-public-resources) (Intro to Program
   Design and Implementation) with [Prof. Daniel Patterson](https://dbp.io/)
