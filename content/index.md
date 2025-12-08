@@ -54,12 +54,6 @@ developers to formally reason about their code and build safer systems.
 
 {%include "partials/pubs.njk" %}
 
-<h2>Speaking</h2>
-
-- **miniDusa: an Extensible Finite-Choice Programming Language:**
-  [RacketCon 2025](https://youtu.be/9HNrYJLeJ5k),
-  [Scheme 2025](https://youtu.be/FoBvgu5enh8)
-
 <h2>Teaching</h2>
 
 - **Spring 2026:** TA for CS 4400/5400
@@ -76,5 +70,11 @@ developers to formally reason about their code and build safer systems.
   of CS 1) with [Prof. Ben Lerner](https://blerner.github.io/)
 - **Summer 1 2024:** TA for CS 2510 (Fundamentals of CS 2) with
   [Prof. Leena Razzaq](https://ccs.neu.edu/~lrazzaq)
+
+<h2>Speaking</h2>
+
+- **miniDusa: an Extensible Finite-Choice Programming Language:**
+  [RacketCon 2025](https://youtu.be/9HNrYJLeJ5k),
+  [Scheme 2025](https://youtu.be/FoBvgu5enh8)
 
 <p class="flag">🏳️‍⚧️</p>
