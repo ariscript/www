@@ -57,7 +57,8 @@ developers to formally reason about their code and build safer systems.
 <h2>Speaking</h2>
 
 - **miniDusa: an Extensible Finite-Choice Programming Language:**
-  [RacketCon 2025](https://youtu.be/9HNrYJLeJ5k), Scheme 2025
+  [RacketCon 2025](https://youtu.be/9HNrYJLeJ5k),
+  [Scheme 2025](https://youtu.be/FoBvgu5enh8)
 
 <h2>Teaching</h2>
 
