@@ -1,6 +1,6 @@
+{# the formatting sins here make njk not insert random whitespace or p tags #}
 <dl id="pubs-container">
-    {% for pub in pubs %}
-        <dt>{{ pub.title }} &ndash; {{ pub.date | monthYear }}</dt>
+    {% for pub in pubs %}<dt>{{ pub.title }} &ndash; {{ pub.date | monthYear }}</dt>
         <dd>
             <ol class="comma-list authors">
                 {% for author in pub.authors %}<li {% if author == config.author.name %}class="author-me"{% endif %}>
@@ -15,6 +15,5 @@
                     </li>{% endfor %}
                 </ul>
             </div>
-        </dd>
-    {% endfor %}
+        </dd>{% endfor %}
 </dl>
