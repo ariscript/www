@@ -13,13 +13,13 @@ export default class ResumeScript {
             const toggle = document.getElementById("resume-toggle");
 
             toggle.addEventListener("click", (e) => {
-            if (e.target.checked) {
-                document.body.classList.add("resume");
-                document.title = "Résumé | ${config.author.name}";
-            } else {
-                document.body.classList.remove("resume");
-                document.title = "CV | ${config.author.name}";
-            }
+                if (e.target.checked) {
+                    document.body.classList.add("resume");
+                    document.title = "Résumé | ${config.author.name}";
+                } else {
+                    document.body.classList.remove("resume");
+                    document.title = "CV | ${config.author.name}";
+                }
             });
         `;
     }
