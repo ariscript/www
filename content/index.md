@@ -56,9 +56,10 @@ developers to formally reason about their code and build safer systems.
 
 <h2>Teaching</h2>
 
-- **Spring 2026:** TA for CS 4400/5400
-  [Programming Languages](https://pages.github.khoury.northeastern.edu/sholtzen/cs4400-spr25/)
-  with [Prof. Steven Holtzen](https://ccs.neu.edu/~sholtzen)
+- **Spring 2026:** TA for
+  [CS 4400/5400](https://pages.github.khoury.northeastern.edu/sholtzen/cs4400-spr25/)
+  (Programming Languages) with
+  [Prof. Steven Holtzen](https://ccs.neu.edu/~sholtzen)
 - **Summer 1 2025:** Course assistant developing materials for
   [CS 2000](https://neu-pdi.github.io/cs2000-public-resources) (Intro to Program
   Design and Implementation) with [Prof. Daniel Patterson](https://dbp.io/)
