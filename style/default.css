@@ -26,6 +26,7 @@
     line-height: 1.25em;
     height: 100%;
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
 }
 
 @media only screen and (prefers-reduced-motion: false) {
