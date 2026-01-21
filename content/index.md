@@ -38,6 +38,8 @@ developers to formally reason about their code and build safer systems.
 
 <h2>News</h2>
 
+- **January 2026:** I'm really excited to have accepted an internship offer at
+  AMD, working with MLIR and IREE this fall!
 - **January 2026:** I will be TAing for CS 4400 (Programming Languages) this
   spring
 - **December 2025:** Our PriSC workshop submission on RichWasm 2 was accepted!
