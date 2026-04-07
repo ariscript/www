@@ -19,7 +19,7 @@
         devShells.default = pkgs.mkShell {
           name = "scratch-devshell"; # Derivation name
           packages = with pkgs; [    # Executables to include in the devshell
-            nodejs_22
+            nodejs_24
             git
           ];
           inputsFrom = [];           # Include these derivations' dependencies
