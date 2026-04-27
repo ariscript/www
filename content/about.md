@@ -7,8 +7,8 @@ description: Who am I?
 {%- html "head" %}
 
 <meta name="og:type" content="profile" />
-<meta name="profile:first_name" content="Ari" />
-<meta name="profile:last_name" content="Prakash" />
+<meta name="profile:first_name" content="ari" />
+<meta name="profile:last_name" content="prakash" />
 <meta name="profile:username" content="ariscript" />
 <meta name="profile:gender" content="female" />
 
@@ -16,7 +16,7 @@ description: Who am I?
 
 # About
 
-I'm Ari Prakash (ஆரி பிரகாஷ்)
+I'm ari prakash (ஆரி பிரகாஷ்)
 (<a href="https://en.pronouns.page/@ariscript" data-external-link="true" target="_blank"><span class="pride trans">she/her</span></a>,
 அவள்), a third-year student at
 [Northeastern University](https://northeastern.edu), where I'm studying Computer
