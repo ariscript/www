@@ -17,6 +17,7 @@ export default function conf(config) {
     config.addPassthroughCopy({ "./js": "/js" });
     config.addWatchTarget("content/**/*.{svg,png,jpeg,webp}");
     config.addWatchTarget("style/**/*.css");
+    config.addWatchTarget("config/**/*");
 
     plugins(config);
     filters(config);

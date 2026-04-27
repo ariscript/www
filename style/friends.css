@@ -1,0 +1,20 @@
+:root {
+    --icon-scale: 2;
+}
+
+#domain-icons {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    justify-self: center;
+    list-style-type: none;
+}
+
+.domain-icon {
+    width: calc(var(--icon-scale) * 88px);
+    height: calc(var(--icon-scale) * 31px);
+    image-rendering: crisp-edges;
+    padding: 0.25rem;
+}
