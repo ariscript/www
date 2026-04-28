@@ -23,6 +23,14 @@ description: I love my friends :)
         </li>{% endfor %}
 </ul>
 
+Here's my own 88x31. Hotlinks to it probably won't work if Cloudflare is to be
+believed. <img
+    id="local-icon"
+    src="/img/88x31.png"
+    alt="88x31 button for {{ config.hostname }}"
+    eleventy:ignore
+/>
+
 # Friends without 88x31s
 
 Please make your own 88x31s, I need more up there.

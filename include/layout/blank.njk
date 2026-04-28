@@ -53,7 +53,9 @@
             title="{{ feed.title }}"
         />
 
-        <link rel="canonical" href="https://{{ config.hostname }}{{ page.url }}">
+        <link rel="canonical" href="https://{{ config.hostname }}{{ page.url }}" />
+
+        <link rel="icon" sizes="88x31" href="/img/88x31.png" type="image/png" />
         
         {% getBundle "html", "head" %}
 

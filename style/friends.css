@@ -1,5 +1,8 @@
 :root {
+    --icon-width: 88px;
+    --icon-height: 31px;
     --icon-scale: 2;
+    --icon-padding: 0.25rem;
 }
 
 #domain-icons {
@@ -12,9 +15,15 @@
     list-style-type: none;
 }
 
-.domain-icon {
-    width: calc(var(--icon-scale) * 88px);
-    height: calc(var(--icon-scale) * 31px);
+.domain-icon,
+#local-icon {
+    width: calc(var(--icon-scale) * var(--icon-width));
+    height: calc(var(--icon-scale) * var(--icon-height));
     image-rendering: crisp-edges;
-    padding: 0.25rem;
+    padding: var(--icon-padding);
+}
+
+#local-icon {
+    /* centering the image :p */
+    margin-inline-start: calc(50% - var(--icon-width) - var(--icon-padding));
 }
