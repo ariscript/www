@@ -10,7 +10,7 @@ description: I love my friends :)
 
 <ul id="domain-icons">
     {% for domain, img in friends.icons %}<li>
-            <a href="http://{{ domain }}">
+            <a href="http://{{ domain }}" target="_blank">
                 <img
                     class="domain-icon"
                     src="{{ img }}"
@@ -39,7 +39,6 @@ Please make your own 88x31s, I need more up there.
     {% for name, place in friends.links %}<li>
             <a
                 href="{{ place }}"
-                rel="noopener noreferrer"
                 target="_blank"
                 data-external-link="true"
             >{{ name }}</a>
