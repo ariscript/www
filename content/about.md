@@ -40,5 +40,5 @@ marginalized people.
 - Matrix: [`@ariscript:matrix.org`](https://matrix.to/#/@ariscript:matrix.org)
 - Email: `me` at this domain ([key](/pgp.asc))
     - If you have my `northeastern.edu` email, the above key still works
-- Socials: see footer
+- Socials: see footer (or below)
 - Signal: ask me on another platform
