@@ -3,7 +3,7 @@
     {% for pub in pubs %}<dt>{{ pub.title }} &ndash; {{ pub.date | monthYear }}</dt>
         <dd>
             <ol class="comma-list authors">
-                {% for author in pub.authors %}<li {% if author == config.author.name %}class="author-me"{% endif %}>
+                {% for author in pub.authors %}<li {% if author.toLowerCase() == config.author.name.toLowerCase() %}class="author-me"{% endif %}>
                     {{ author }}
                 </li>{% endfor %}
             </ol>
