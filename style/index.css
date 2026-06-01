@@ -51,6 +51,23 @@ figure {
     margin-bottom: 0;
 }
 
+.comma-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.comma-list > li {
+    width: fit-content;
+}
+
+.comma-list > li:not(:last-of-type)::after {
+    content: ",";
+    padding-inline-end: 0.25rem;
+}
+
 #pubs-container {
     & dt {
         font-size: 1.125rem;
@@ -59,23 +76,6 @@ figure {
 
     & dd {
         margin-inline-start: 0;
-    }
-
-    & .comma-list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        list-style: none;
-        padding-inline-start: 0;
-    }
-
-    & .comma-list > li {
-        width: fit-content;
-    }
-
-    & .comma-list > li:not(:last-of-type)::after {
-        content: ",";
-        padding-inline-end: 0.25rem;
     }
 
     & .pub-extra {
